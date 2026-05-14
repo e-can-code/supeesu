@@ -1,34 +1,149 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<style>
-@font-face{
-font-family: hina-mincho;
-src: url(Hina-Mincho-Regular.woff);
-}
-body {background-color:#0c031f;} 
-div{
-	width: 80%
-	margin: auto
-	background-color:black;
-}
-h1 {color: lavender;
-    text-align: center;
-    font-family: hina-mincho}
-p {color: thistle;
-   text-indent: 50px;
-   font-family: hina-mincho;
-   font-size: 20px}
-</style>
-<title>ようこそ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ようこそ</title>
+    <style>
+        /* Font Setup */
+        @font-face {
+            font-family: 'hina-mincho';
+            src: url('Hina-Mincho-Regular.woff');
+            /* Note: Ensure this file is in your GitHub repo folder */
+        }
+
+        /* Layout & Colors */
+        body {
+            background-color: #0c031f;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            margin-top: 50px;
+            background-color: black;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        /* Typography */
+        h1 {
+            color: lavender;
+            font-family: 'hina-mincho', serif;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: thistle;
+            text-indent: 50px;
+            font-family: 'hina-mincho', serif;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        /* Search Section */
+        .search-wrapper {
+            margin: 40px 0;
+        }
+
+        #search-input {
+            width: 80%;
+            padding: 15px 25px;
+            background: transparent;
+            border: 2px solid lavender;
+            border-radius: 30px;
+            color: white;
+            font-size: 20px;
+            font-family: 'hina-mincho', serif;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        #search-input:focus {
+            border-color: thistle;
+            box-shadow: 0 0 15px rgba(216, 191, 216, 0.4);
+        }
+
+        .engine-toggle {
+            margin-top: 15px;
+            color: thistle;
+            font-family: 'hina-mincho', serif;
+            font-size: 14px;
+        }
+
+        .engine-toggle label {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body style="padding-left:10%;padding-right:10%;">
+<body>
 
-<div class="container"
-<h1>スペース</h1>
-<p>これはparagraphですね。</p>
-</div>
+    <div class="container">
+        <h1>スペース</h1>
+        
+        <div class="search-wrapper">
+            <form id="search-form" action="https://www.google.com/search" method="get">
+                <input type="text" name="q" id="search-input" placeholder="Search..." autofocus>
+                
+                <div class="engine-toggle">
+                    <label>
+                        <input type="radio" name="engine" value="google" checked> Google
+                    </label>
+                    <label>
+                        <input type="radio" name="engine" value="ddg"> DuckDuckGo
+                    </label>
+                </div>
+            </form>
+        </div>
 
+        <p>これはparagraphですね。</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('search-form');
+        const input = document.getElementById('search-input');
+        const radios = document.getElementsByName('engine');
+
+        // 1. Memory: Check for saved search preference
+        const savedEngine = localStorage.getItem('preferredEngine');
+        if (savedEngine) {
+            const radioToSelect = document.querySelector(`input[value="${savedEngine}"]`);
+            if (radioToSelect) {
+                radioToSelect.checked = true;
+                updateAction(savedEngine);
+            }
+        }
+
+        // 2. Logic: Handle engine switching
+        radios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                updateAction(radio.value);
+                localStorage.setItem('preferredEngine', radio.value);
+                input.focus();
+            });
+        });
+
+        function updateAction(value) {
+            if (value === 'ddg') {
+                form.action = "https://duckduckgo.com/";
+            } else {
+                form.action = "https://www.google.com/search";
+            }
+        }
+
+        // 3. Bulletproof Focus: Ensure input is focused on load
+        window.onload = () => {
+            input.focus();
+        };
+    </script>
 
 </body>
-</html> 
+</html>
