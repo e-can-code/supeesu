@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>スペース - Supeesu</title>
     <style>
-        /* 1. Core Layout */
+        /* 1. Core Layout & Night Sky */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -18,67 +18,78 @@
         }
 
         body {
-            background-color: #0c031f; /* Deep night sky */
+            background-color: #0c031f; /* Deep purple night sky */
             font-family: 'hina-mincho', serif;
             color: lavender;
             
             display: flex;
-            flex-direction: column; /* Stack Title above Grid */
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
 
-        /* 2. Header Title (Floating above tiles) */
+        /* 2. Header (The "North Star") */
         header {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             text-align: center;
         }
 
         h1 {
-            color: #ffd700; /* Lantern Gold */
-            font-size: 48px;
-            letter-spacing: 8px;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            color: #ffd700; /* Rich Lantern Gold */
+            font-size: 52px;
+            letter-spacing: 12px;
+            text-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
             font-weight: normal;
         }
 
-        /* 3. Grid Layout */
+        /* 3. Modular Grid */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
             width: 100%;
-            max-width: 1100px;
+            max-width: 1200px;
         }
 
-        /* 4. Modular Tile Styling */
+        /* 4. Tile Styling & Hover Glow */
         .tile {
             background-color: rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.8); /* Thin white border */
-            border-radius: 4px; /* Sharper, more "window" like */
+            border: 1px solid rgba(255, 255, 255, 0.7); /* Thin white border */
+            border-radius: 4px;
             padding: 40px;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(10px);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
             
+            /* The "Magical" Transition */
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             flex-direction: column;
             justify-content: center;
+            min-height: 200px;
         }
 
-        /* 5. Search Tile Specifics */
+        .tile:hover {
+            border-color: #ffd700; /* Glows gold on hover */
+            background-color: rgba(255, 215, 0, 0.03); 
+            box-shadow: 0 0 35px rgba(255, 215, 0, 0.15), 
+                        inset 0 0 15px rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px); /* Subtle float effect */
+        }
+
+        /* 5. Minimalist Search Bar */
         .search-wrapper {
             width: 100%;
         }
 
         #search-input {
             width: 100%;
-            padding: 12px 0; /* Clean, underlined look */
+            padding: 15px 0;
             background: transparent;
             border: none;
             border-bottom: 1px solid lavender; 
             color: white;
-            font-size: 22px;
+            font-size: 24px;
             font-family: 'hina-mincho', serif;
             outline: none;
             transition: all 0.4s ease;
@@ -86,40 +97,45 @@
 
         #search-input:focus {
             border-bottom-color: #ffd700;
-            padding-left: 10px; /* Subtle movement on focus */
+            padding-left: 12px;
         }
 
         .engine-toggle {
-            margin-top: 20px;
+            margin-top: 25px;
             color: thistle;
             font-size: 13px;
             letter-spacing: 1px;
+            opacity: 0.8;
         }
 
         .engine-toggle label {
-            margin-right: 20px;
+            margin-right: 25px;
             cursor: pointer;
-            transition: color 0.3s;
         }
 
         .engine-toggle input[type="radio"] {
             accent-color: #ffd700;
-            margin-right: 5px;
+            margin-right: 8px;
         }
 
-        /* 6. Text Tile Content */
+        /* 6. Content Typography */
         p {
             color: thistle;
-            font-size: 18px;
+            font-size: 19px;
             line-height: 1.8;
-            text-align: justify;
+            transition: color 0.5s ease;
+        }
+
+        .tile:hover p {
+            color: white;
         }
 
         .lantern-accent {
             color: #ffd700;
             font-size: 14px;
-            margin-top: 10px;
+            margin-top: 15px;
             display: block;
+            letter-spacing: 2px;
         }
 
     </style>
@@ -146,15 +162,15 @@
             </div>
         </div>
 
-        <!-- Content Tile -->
+        <!-- Inspiration Tile -->
         <div class="tile">
             <p>これはparagraphですね。ここにインスピレーションを与える言葉を置くことができます。</p>
             <span class="lantern-accent">✦ 静かな夜に思考を巡らせる ✦</span>
         </div>
 
-        <!-- Optional Third Tile (Ready for more modules) -->
-        <div class="tile">
-            <p style="opacity: 0.6;">次は、よく使うリンクや天気のモジュールを追加しましょうか？</p>
+        <!-- Future Feature Tile -->
+        <div class="tile" style="border-style: dashed; opacity: 0.7;">
+            <p style="font-size: 16px; text-align: center;">+ 新しいモジュールを追加</p>
         </div>
 
     </div>
@@ -164,6 +180,7 @@
         const input = document.getElementById('search-input');
         const radios = document.getElementsByName('engine');
 
+        // Logic: Memory (Persistence)
         const savedEngine = localStorage.getItem('preferredEngine');
         if (savedEngine) {
             const radioToSelect = document.querySelector(`input[value="${savedEngine}"]`);
@@ -173,6 +190,7 @@
             }
         }
 
+        // Logic: Engine Toggle
         radios.forEach(radio => {
             radio.addEventListener('change', () => {
                 updateAction(radio.value);
@@ -185,6 +203,7 @@
             form.action = (value === 'ddg') ? "https://duckduckgo.com/" : "https://www.google.com/search";
         }
 
+        // Auto-focus on load
         window.onload = () => { input.focus(); };
     </script>
 
