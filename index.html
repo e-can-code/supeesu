@@ -3,78 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ようこそ</title>
+    <title>ようこそ - スペース</title>
     <style>
-        /* Font Setup */
+        /* 1. Reset and Core Layout */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         @font-face {
             font-family: 'hina-mincho';
             src: url('Hina-Mincho-Regular.woff');
-            /* Note: Ensure this file is in your GitHub repo folder */
+            /* Ensure this file is in your GitHub repo folder */
         }
 
-        /* Layout & Colors */
         body {
-            background-color: #0c031f;
-            padding-left: 10%;
-            padding-right: 10%;
-            margin: 0;
+            background-color: #0c031f; /* Deep night sky */
+            font-family: 'hina-mincho', serif;
+            color: lavender;
+            
             display: flex;
             justify-content: center;
+            align-items: center; /* Vertically centers the main grid */
             min-height: 100vh;
+            padding: 20px;
         }
 
-        .container {
-            width: 80%;
-            margin-top: 50px;
-            background-color: black;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            text-align: center;
+        /* 2. Main Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two columns, responsive */
+            gap: 20px; /* Space between the tiles */
+            width: 100%;
+            max-width: 1000px;
         }
 
-        /* Typography */
-        h1 {
-            color: lavender;
-            font-family: 'hina-mincho', serif;
-            margin-bottom: 30px;
+        /* 3. The "Tile" / Window Styling */
+        .tile {
+            background-color: rgba(0, 0, 0, 0.7); /* Translucent, deepens the sky */
+            border: 1px solid white; /* Essential request for the minimal look */
+            border-radius: 8px; /* Slightly softened corners */
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Soft, cosmic glow */
+            backdrop-filter: blur(5px); /* Makes the bg feel "thick" with atmosphere */
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
+        /* 4. Color Palette & Typography Updates */
+        
+        /* The "Rich Yellow Lantern" accents */
+        h1, .lantern-accent {
+            color: #ffd700; /* Rich Gold/Yellow */
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Lantern glow */
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 36px; }
 
         p {
             color: thistle;
-            text-indent: 50px;
-            font-family: 'hina-mincho', serif;
-            font-size: 20px;
+            font-size: 18px;
             text-align: left;
+            width: 100%;
         }
 
-        /* Search Section */
+        /* 5. Modern Search Style (Tile-based) */
         .search-wrapper {
-            margin: 40px 0;
+            width: 100%;
+            text-align: center;
         }
 
         #search-input {
-            width: 80%;
-            padding: 15px 25px;
+            width: 100%;
+            padding: 12px 20px;
             background: transparent;
-            border: 2px solid lavender;
-            border-radius: 30px;
-            color: white;
-            font-size: 20px;
+            
+            /* Match the tile's border style */
+            border: 1px solid lavender; 
+            border-radius: 25px;
+            
+            color: lavender;
+            font-size: 18px;
             font-family: 'hina-mincho', serif;
             outline: none;
-            transition: border-color 0.3s, box-shadow 0.3s;
+            transition: all 0.3s ease;
         }
 
         #search-input:focus {
-            border-color: thistle;
-            box-shadow: 0 0 15px rgba(216, 191, 216, 0.4);
+            /* Input focuses to the "lantern gold" glow */
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
 
         .engine-toggle {
             margin-top: 15px;
             color: thistle;
-            font-family: 'hina-mincho', serif;
             font-size: 14px;
         }
 
@@ -82,29 +110,51 @@
             margin: 0 10px;
             cursor: pointer;
         }
+
+        /* The gold dot for selected engine */
+        .engine-toggle input[type="radio"]:checked {
+            accent-color: #ffd700;
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>スペース</h1>
+    <div class="grid-container">
         
-        <div class="search-wrapper">
-            <form id="search-form" action="https://www.google.com/search" method="get">
-                <input type="text" name="q" id="search-input" placeholder="Search..." autofocus>
-                
-                <div class="engine-toggle">
-                    <label>
-                        <input type="radio" name="engine" value="google" checked> Google
-                    </label>
-                    <label>
-                        <input type="radio" name="engine" value="ddg"> DuckDuckGo
-                    </label>
-                </div>
-            </form>
+        <!-- Tile 1: Greeting -->
+        <div class="tile greeting-tile">
+            <h1>スペース</h1>
         </div>
 
-        <p>これはparagraphですね。</p>
+        <!-- Tile 2: Search -->
+        <div class="tile search-tile">
+            <div class="search-wrapper">
+                <form id="search-form" action="https://www.google.com/search" method="get">
+                    <input type="text" name="q" id="search-input" placeholder="Search the cosmos..." autofocus>
+                    
+                    <div class="engine-toggle">
+                        <label>
+                            <input type="radio" name="engine" value="google" checked> Google
+                        </label>
+                        <label>
+                            <input type="radio" name="engine" value="ddg"> DuckDuckGo
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tile 3: Info/Content -->
+        <div class="tile info-tile">
+            <p>これはparagraphですね。ここにインスピレーションを与える言葉を置くことができます。</p>
+        </div>
+
+        <!-- Tile 4: Future Modular Block (e.g., Links, Weather) -->
+        <div class="tile modular-tile">
+            <p class="lantern-accent">✨ <span>新機能を追加する準備ができています。</span> ✨</p>
+        </div>
+
     </div>
 
     <script>
