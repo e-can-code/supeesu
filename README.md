@@ -17,11 +17,14 @@ A minimalist, modular browser start page designed as a quiet digital sanctuary. 
 
 ---
 
-## ✦ Design Philosophy & Aesthetic
+---
 
-*   **Palette:** Deep night sky purples (`#0c031f`), muted lavender text, and rich glowing gold accents (`#ffd700`) to simulate the warmth of lantern light.
-*   **Typography:** Styled using specialized, elegant Japanese typography (Hina-Mincho) to emphasize a reflective, literary mood.
-*   **Intentionality:** Designed strictly to reduce digital noise. Elements focus on open space, smooth animation curves, and high contrast without overwhelming the user.
+## ✦ Design Philosophy & Intentionality
+
+*   **A Sanctuary from Digital Noise:** Typical modern browsers default to opening new tabs that aggressively force metrics, invasive advertisements, continuous news feeds, clickbait headlines, and the ambient anxiety of online job boards directly in front of your eyeballs every single day. *Supeesu* was born out of a desire to create a deliberate boundary against this constant friction. It serves as a focused antidote, ensuring that when you open a tab, you are met with a clean break rather than an inescapable stream of distractions.
+*   **Restoring Intentionality:** By replacing external noise with an empty, beautiful environment, the dashboard returns agency to the user. You are greeted by a blank canvas rather than a stream of distractions, ensuring your first interaction with the browser is calm, purposeful, and entirely your own.
+*   **The Atmospheric Palette:** Utilizes a deep night sky purple (`#0c031f`), muted lavender text, and rich glowing gold accents (`#ffd700`) to simulate the quiet warmth of floating lantern light.
+*   **Specialized Typography:** Styled using specialized, elegant Japanese typography (Hina-Mincho) to emphasize a reflective, literary mood that honors a slower, more deliberate aesthetic.
 
 ---
 
