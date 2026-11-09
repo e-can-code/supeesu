@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "id": "great_convergence",
+      "recurrence": "Gregorian January 29",
+      "priority": 100,
+      "stages": [
+        "predawn",
+        "morning",
+        "afternoon",
+        "golden",
+        "evening",
+        "sepia night"
+      ],
+      "required": "most harmonious annual composition, not maximum brightness",
+      "introductions": [
+        "garden_bird_candidate",
+        "atelier_singing_insect_candidate",
+        "pool_fish_candidate"
+      ],
+      "status": "DESIGN"
+    },
+    {
+      "id": "lunar_new_year",
+      "recurrence": "verified Chinese lunisolar calendar",
+      "status": "DESIGN"
+    },
+    {
+      "id": "first_long_rains",
+      "day_start": 101,
+      "duration_days": 2,
+      "local_precipitation": "gentle",
+      "distant_precipitation": "intense",
+      "status": "DESIGN"
+    },
+    {
+      "id": "after_rain_prisms",
+      "gates_ref": "climate.json/rainbow_gates",
+      "status": "DESIGN"
+    },
+    {
+      "id": "full_jade_moon",
+      "recurrence_days": 36,
+      "phase": "full",
+      "status": "DESIGN"
+    }
+  ],
+  "event_resolution": "priority + authored composition constraints; never overwrite canonical orbital or ecological history"
+}

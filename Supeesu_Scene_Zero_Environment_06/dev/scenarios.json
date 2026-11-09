@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    {
+      "id": "today-prior-cycle",
+      "label": "Reference date in preceding cycle (November 9, 2026)",
+      "worldLocalDateTime": "2026-11-09T12:00:00",
+      "expected": "Previous cycle (-1), ecological day 720, Deep Renewal (season 8), season day 20. Rhythms active, no prologue. No authored microseason profile outside original 200-day coverage.",
+      "assertions": {
+        "dayOffsetFromEpoch": -81,
+        "status": "active",
+        "ecology.cycleIndex": -1,
+        "ecology.day": 720,
+        "ecology.seasonId": "deep-renewal",
+        "ecology.seasonDay": 20,
+        "rhythms.day200": 120,
+        "rhythms.day400": 320,
+        "rhythms.microseasonDay": 4,
+        "rhythms.authoredMicroseasonId": null
+      }
+    },
+    {
+      "id": "previous-cycle-final",
+      "label": "Final day before the 2027 epoch",
+      "worldLocalDateTime": "2027-01-28T12:00:00",
+      "expected": "Previous cycle (-1), ecological day 800, Deep Renewal day 100. All independent rhythms active. Annual January convergence not yet occurring.",
+      "assertions": {
+        "dayOffsetFromEpoch": -1,
+        "ecology.cycleIndex": -1,
+        "ecology.day": 800,
+        "ecology.seasonId": "deep-renewal",
+        "ecology.seasonDay": 100,
+        "rhythms.day200": 200,
+        "rhythms.day400": 400
+      }
+    },
+    {
+      "id": "previous-cycle-first",
+      "label": "First day of preceding 800-day cycle",
+      "worldLocalDateTime": "2024-11-20T12:00:00",
+      "expected": "Previous cycle (-1), ecological day 1, First Stirring day 1. Epoch anchor remains January 29, 2027.",
+      "assertions": {
+        "dayOffsetFromEpoch": -800,
+        "ecology.cycleIndex": -1,
+        "ecology.day": 1,
+        "ecology.seasonId": "first-stirring",
+        "ecology.seasonDay": 1,
+        "rhythms.microseasonDay": 6
+      }
+    },
+    {
+      "id": "earlier-january-event",
+      "label": "Annual January 29 convergence before epoch",
+      "worldLocalDateTime": "2026-01-29T12:00:00",
+      "expected": "Great Convergence occurs on the Gregorian date January 29 even before the ecological epoch. Ecological day is determined separately by the 800-day cycle.",
+      "assertions": {
+        "dayOffsetFromEpoch": -365,
+        "ecology.cycleIndex": -1,
+        "ecology.day": 436,
+        "ecology.seasonId": "copper-renewal",
+        "annualEventIds": [
+          "great-convergence"
+        ]
+      }
+    },
+    {
+      "id": "epoch-before-boundary",
+      "label": "Before the 05:30 daily boundary",
+      "worldLocalDateTime": "2027-01-29T05:29:00",
+      "expected": "Ecology day 1; simulated session day 2027-01-28; annual convergence active. No real playback.",
+      "assertions": {
+        "ecology.cycleIndex": 0,
+        "ecology.day": 1,
+        "ecology.seasonId": "first-stirring",
+        "simulatedSessionDay": "2027-01-28",
+        "annualEventIds": [
+          "great-convergence"
+        ]
+      }
+    },
+    {
+      "id": "great-convergence-2028",
+      "label": "Annual convergence within High Radiance (January 29, 2028)",
+      "worldLocalDateTime": "2028-01-29T12:00:00",
+      "expected": "Great Convergence recurs annually, while the independent 800-day ecology is in High Radiance (day 366, season day 66). This is not a reset of the ecological cycle.",
+      "assertions": {
+        "dayOffsetFromEpoch": 365,
+        "ecology.cycleIndex": 0,
+        "ecology.day": 366,
+        "ecology.seasonId": "high-radiance",
+        "ecology.seasonDay": 66,
+        "annualEventIds": [
+          "great-convergence"
+        ]
+      }
+    },
+    {
+      "id": "epoch-at-boundary",
+      "label": "At the 05:30 daily boundary",
+      "worldLocalDateTime": "2027-01-29T05:30:00",
+      "expected": "Ecology day 1; simulated session day 2027-01-29; annual convergence active.",
+      "assertions": {
+        "ecology.cycleIndex": 0,
+        "ecology.day": 1,
+        "simulatedSessionDay": "2027-01-29",
+        "annualEventIds": [
+          "great-convergence"
+        ]
+      }
+    },
+    {
+      "id": "short-rhythm-restart",
+      "label": "200-day rhythm restarts",
+      "worldLocalDateTime": "2027-08-17T12:00:00",
+      "expected": "Ecology day 201; 200-day rhythm returns to day 1.",
+      "assertions": {
+        "ecology.day": 201,
+        "rhythms.day200": 1,
+        "ecology.seasonId": "glasslight"
+      }
+    },
+    {
+      "id": "long-rhythm-restart",
+      "label": "400-day rhythm restarts",
+      "worldLocalDateTime": "2028-03-04T12:00:00",
+      "expected": "Ecology day 401; 400-day rhythm returns to day 1.",
+      "assertions": {
+        "ecology.day": 401,
+        "rhythms.day400": 1,
+        "ecology.seasonId": "copper-renewal"
+      }
+    },
+    {
+      "id": "ecology-restart",
+      "label": "800-day ecology restarts",
+      "worldLocalDateTime": "2029-04-08T12:00:00",
+      "expected": "Ecology day 1 in cycle 2; the independent seven-day rhythm need not match the first day of cycle 1.",
+      "assertions": {
+        "ecology.day": 1,
+        "ecology.cycleIndex": 1,
+        "rhythms.microseasonDay": 3
+      }
+    },
+    {
+      "id": "july-provisional",
+      "label": "Provisional July convergence diagnostic",
+      "worldLocalDateTime": "2027-07-29T19:00:00",
+      "expected": "Provisional event appears only in development mode. July 29 is a test date, not an approved event date.",
+      "assertions": {
+        "ecology.cycleIndex": 0,
+        "annualEventIds": [
+          "july-convergence-diagnostic"
+        ]
+      }
+    },
+    {
+      "id": "night-splash-window",
+      "label": "Evening-to-night splash-rate test",
+      "worldLocalDateTime": "2027-01-29T19:15:00",
+      "expected": "The 19:15 pond is transitioning from evening toward night; splash likelihood rises smoothly to a 1.5× peak at 20:00. The scheduled ripple is deterministic and does not play skipped historical audio.",
+      "assertions": {
+        "ecology.cycleIndex": 0,
+        "ecology.day": 1,
+        "annualEventIds": [
+          "great-convergence"
+        ]
+      },
+      "environmentExpectations": {
+        "splashMultiplier": [
+          1,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "season-visual-1",
+      "label": "Living Pool palette · First Stirring",
+      "worldLocalDateTime": "2027-03-19T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 1.",
+      "assertions": {
+        "ecology.seasonId": "first-stirring",
+        "ecology.seasonIndex": 1
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "first-stirring"
+      }
+    },
+    {
+      "id": "season-visual-2",
+      "label": "Living Pool palette · Long Rains",
+      "worldLocalDateTime": "2027-06-27T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 2.",
+      "assertions": {
+        "ecology.seasonId": "long-rains",
+        "ecology.seasonIndex": 2
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "long-rains"
+      }
+    },
+    {
+      "id": "season-visual-3",
+      "label": "Living Pool palette · Glasslight",
+      "worldLocalDateTime": "2027-10-05T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 3.",
+      "assertions": {
+        "ecology.seasonId": "glasslight",
+        "ecology.seasonIndex": 3
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "glasslight"
+      }
+    },
+    {
+      "id": "season-visual-4",
+      "label": "Living Pool palette · High Radiance",
+      "worldLocalDateTime": "2028-01-13T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 4.",
+      "assertions": {
+        "ecology.seasonId": "high-radiance",
+        "ecology.seasonIndex": 4
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "high-radiance"
+      }
+    },
+    {
+      "id": "season-visual-5",
+      "label": "Living Pool palette · Copper Renewal",
+      "worldLocalDateTime": "2028-04-22T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 5.",
+      "assertions": {
+        "ecology.seasonId": "copper-renewal",
+        "ecology.seasonIndex": 5
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "copper-renewal"
+      }
+    },
+    {
+      "id": "season-visual-6",
+      "label": "Living Pool palette · Veiled Sea",
+      "worldLocalDateTime": "2028-07-31T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 6.",
+      "assertions": {
+        "ecology.seasonId": "veiled-sea",
+        "ecology.seasonIndex": 6
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "veiled-sea"
+      }
+    },
+    {
+      "id": "season-visual-7",
+      "label": "Living Pool palette · Silvering",
+      "worldLocalDateTime": "2028-11-08T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 7.",
+      "assertions": {
+        "ecology.seasonId": "silvering",
+        "ecology.seasonIndex": 7
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "silvering"
+      }
+    },
+    {
+      "id": "season-visual-8",
+      "label": "Living Pool palette · Deep Renewal",
+      "worldLocalDateTime": "2029-02-16T12:00:00",
+      "expected": "Visible ground and water palette should differ from other seasons; 100-day season 8.",
+      "assertions": {
+        "ecology.seasonId": "deep-renewal",
+        "ecology.seasonIndex": 8
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          1
+        ],
+        "ecologicalSeason": "deep-renewal"
+      }
+    },
+    {
+      "id": "visual-before-dawn",
+      "label": "Living Pool · predawn low illumination",
+      "worldLocalDateTime": "2027-02-07T04:30:00",
+      "expected": "Lighting dim, fish slower, mist more noticeable.",
+      "assertions": {
+        "ecology.seasonId": "first-stirring"
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.1,
+          0.32
+        ],
+        "fishActivity": [
+          0.08,
+          0.53
+        ]
+      }
+    },
+    {
+      "id": "visual-morning",
+      "label": "Living Pool · morning sunlight",
+      "worldLocalDateTime": "2027-02-07T09:00:00",
+      "expected": "Brightness rises and fish activity is higher than at predawn.",
+      "assertions": {
+        "ecology.seasonId": "first-stirring"
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.55,
+          0.91
+        ],
+        "fishActivity": [
+          0.6,
+          1
+        ]
+      }
+    },
+    {
+      "id": "visual-dusk",
+      "label": "Living Pool · evening golden transition",
+      "worldLocalDateTime": "2027-02-07T18:30:00",
+      "expected": "Warmth strong and splash likelihood begins to rise from baseline.",
+      "assertions": {
+        "ecology.seasonId": "first-stirring"
+      },
+      "environmentExpectations": {
+        "warmth": [
+          0.8,
+          1
+        ],
+        "splashMultiplier": [
+          1,
+          1.02
+        ]
+      }
+    },
+    {
+      "id": "visual-splash-peak",
+      "label": "Living Pool · peak splash probability (20:00)",
+      "worldLocalDateTime": "2027-02-07T20:00:00",
+      "expected": "Splash event chance is exactly 1.5 times baseline; no fish artwork leaves the water.",
+      "assertions": {
+        "ecology.seasonId": "first-stirring"
+      },
+      "environmentExpectations": {
+        "splashMultiplier": [
+          1.5,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "visual-moonlit",
+      "label": "Living Pool · late evening low light",
+      "worldLocalDateTime": "2027-02-07T22:30:00",
+      "expected": "Nighttime light remains warm but dim; moon ephemeris remains unimplemented.",
+      "assertions": {
+        "ecology.seasonId": "first-stirring"
+      },
+      "environmentExpectations": {
+        "illumination": [
+          0.09,
+          0.3
+        ]
+      }
+    },
+    {
+      "id": "visual-convergence",
+      "label": "Living Pool · January 29 convergence palette",
+      "worldLocalDateTime": "2028-01-29T20:00:00",
+      "expected": "High Radiance combined with independently authored annual gold convergence treatment.",
+      "assertions": {
+        "ecology.seasonId": "high-radiance",
+        "annualEventIds": [
+          "great-convergence"
+        ]
+      },
+      "environmentExpectations": {
+        "eventIds": [
+          "great-convergence"
+        ]
+      }
+    },
+    {
+      "id": "visual-july",
+      "label": "Living Pool · development-only July recolor",
+      "worldLocalDateTime": "2027-07-29T19:00:00",
+      "expected": "Development-only conspicuous rose tint, not a canonical July convergence.",
+      "assertions": {
+        "annualEventIds": [
+          "july-convergence-diagnostic"
+        ]
+      },
+      "environmentExpectations": {
+        "eventIds": [
+          "july-convergence-diagnostic"
+        ]
+      }
+    }
+  ]
+}

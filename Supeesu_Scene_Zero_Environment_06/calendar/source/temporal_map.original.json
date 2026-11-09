@@ -1,0 +1,131 @@
+{
+  "epoch": "2027-01-29",
+  "eight_seasons": [
+    {
+      "index": 1,
+      "name": "First Stirring",
+      "day_start": 1,
+      "day_end": 100,
+      "moisture_target": 0.6,
+      "radiance_target": 0.62,
+      "biological_activity_target": 0.8,
+      "status": "DESIGN"
+    },
+    {
+      "index": 2,
+      "name": "Long Rains",
+      "day_start": 101,
+      "day_end": 200,
+      "moisture_target": 0.94,
+      "radiance_target": 0.48,
+      "biological_activity_target": 0.95,
+      "status": "DESIGN"
+    },
+    {
+      "index": 3,
+      "name": "Glasslight",
+      "day_start": 201,
+      "day_end": 300,
+      "moisture_target": 0.48,
+      "radiance_target": 0.86,
+      "biological_activity_target": 0.76,
+      "status": "DESIGN"
+    },
+    {
+      "index": 4,
+      "name": "High Radiance",
+      "day_start": 301,
+      "day_end": 400,
+      "moisture_target": 0.22,
+      "radiance_target": 0.98,
+      "biological_activity_target": 0.58,
+      "status": "DESIGN"
+    },
+    {
+      "index": 5,
+      "name": "Copper Renewal",
+      "day_start": 401,
+      "day_end": 500,
+      "moisture_target": 0.42,
+      "radiance_target": 0.72,
+      "biological_activity_target": 0.82,
+      "status": "DESIGN"
+    },
+    {
+      "index": 6,
+      "name": "Veiled Sea",
+      "day_start": 501,
+      "day_end": 600,
+      "moisture_target": 0.87,
+      "radiance_target": 0.38,
+      "biological_activity_target": 0.78,
+      "status": "DESIGN"
+    },
+    {
+      "index": 7,
+      "name": "Silvering",
+      "day_start": 601,
+      "day_end": 700,
+      "moisture_target": 0.45,
+      "radiance_target": 0.51,
+      "biological_activity_target": 0.48,
+      "status": "DESIGN"
+    },
+    {
+      "index": 8,
+      "name": "Deep Renewal",
+      "day_start": 701,
+      "day_end": 800,
+      "moisture_target": 0.55,
+      "radiance_target": 0.68,
+      "biological_activity_target": 0.7,
+      "status": "DESIGN"
+    }
+  ],
+  "periods_days": {
+    "season": 100,
+    "ecological_movement": 200,
+    "climate": 400,
+    "full_cycle": 800,
+    "microseason": 7,
+    "jade_moon": 36
+  },
+  "daily_schedule": [
+    {
+      "time": "04:00",
+      "state": "optional deep blue predawn"
+    },
+    {
+      "time": "05:30",
+      "state": "daylight and tree growth begin"
+    },
+    {
+      "time": "10:00",
+      "state": "blue-rich morning ends"
+    },
+    {
+      "time": "15:30",
+      "state": "golden hour begins"
+    },
+    {
+      "time": "18:30",
+      "state": "golden hour ends; daily tree growth stops"
+    },
+    {
+      "time": "20:30",
+      "state": "moonlit dark"
+    },
+    {
+      "time": "22:00",
+      "state": "deepening red-amber"
+    },
+    {
+      "time": "22:30",
+      "state": "deep sepia"
+    }
+  ],
+  "local_date_dst_policy": "date arithmetic, not elapsed milliseconds divided by 86400000",
+  "annual_event": "January 29 Great Convergence",
+  "annual_tree": "January 1 to December 31; January 29 event is independent of annual growth",
+  "lunar_new_year": "verified Chinese lunisolar date source required; do not assume constant date"
+}

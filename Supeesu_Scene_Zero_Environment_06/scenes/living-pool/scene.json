@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "living-pool",
+  "label": "Living Pool \u00b7 Scene Zero",
+  "stage": {
+    "width": 1200,
+    "height": 720,
+    "fit": "xMidYMid slice"
+  },
+  "waterPath": "M 170 506 C 181 414 384 356 617 361 C 830 351 1044 412 1072 497 C 1104 597 895 667 623 673 C 387 676 181 612 170 506 Z",
+  "layers": [
+    {
+      "id": "sky",
+      "kind": "sky",
+      "z": -30
+    },
+    {
+      "id": "distant-hills",
+      "asset": "assets/hills.svg",
+      "z": -20,
+      "bounds": [
+        0,
+        0,
+        1200,
+        720
+      ]
+    },
+    {
+      "id": "ground",
+      "asset": "assets/ground.svg",
+      "z": 0,
+      "bounds": [
+        0,
+        0,
+        1200,
+        720
+      ]
+    },
+    {
+      "id": "water",
+      "asset": "assets/water.svg",
+      "z": 10,
+      "bounds": [
+        0,
+        0,
+        1200,
+        720
+      ],
+      "clip": "water"
+    },
+    {
+      "id": "rim",
+      "asset": "assets/rim.svg",
+      "z": 20,
+      "bounds": [
+        0,
+        0,
+        1200,
+        720
+      ]
+    },
+    {
+      "id": "lily-left",
+      "asset": "assets/lilies.svg",
+      "z": 25,
+      "bounds": [
+        280,
+        435,
+        208,
+        127
+      ]
+    },
+    {
+      "id": "lily-right",
+      "asset": "assets/lilies.svg",
+      "z": 27,
+      "bounds": [
+        808,
+        510,
+        171,
+        101
+      ]
+    },
+    {
+      "id": "fish-school",
+      "kind": "fish",
+      "z": 30
+    },
+    {
+      "id": "ripples",
+      "kind": "ripples",
+      "z": 36
+    },
+    {
+      "id": "water-glints",
+      "kind": "glints",
+      "z": 40
+    },
+    {
+      "id": "reeds-left",
+      "asset": "assets/reeds.svg",
+      "z": 55,
+      "bounds": [
+        10,
+        425,
+        209,
+        309
+      ],
+      "sway": true
+    },
+    {
+      "id": "reeds-right",
+      "asset": "assets/reeds.svg",
+      "z": 55,
+      "bounds": [
+        1000,
+        418,
+        210,
+        310
+      ],
+      "sway": true
+    },
+    {
+      "id": "foreground",
+      "asset": "assets/foreground.svg",
+      "z": 60,
+      "bounds": [
+        0,
+        0,
+        1200,
+        720
+      ]
+    }
+  ],
+  "fish": [
+    {
+      "id": "koi-amber",
+      "asset": "assets/koi-amber.svg",
+      "size": [
+        99,
+        47
+      ],
+      "center": [
+        480,
+        508
+      ],
+      "orbit": [
+        110,
+        55
+      ],
+      "periodSeconds": 42,
+      "phase": 0.1,
+      "rotationOffset": 0
+    },
+    {
+      "id": "koi-pearl",
+      "asset": "assets/koi-pearl.svg",
+      "size": [
+        84,
+        42
+      ],
+      "center": [
+        755,
+        542
+      ],
+      "orbit": [
+        105,
+        58
+      ],
+      "periodSeconds": 57,
+      "phase": 2.5,
+      "rotationOffset": 0
+    },
+    {
+      "id": "koi-copper",
+      "asset": "assets/koi-copper.svg",
+      "size": [
+        77,
+        38
+      ],
+      "center": [
+        645,
+        459
+      ],
+      "orbit": [
+        98,
+        37
+      ],
+      "periodSeconds": 70,
+      "phase": 4.4,
+      "rotationOffset": 0
+    }
+  ],
+  "audio": {
+    "ambience": "audio/pond-water.wav",
+    "music": "audio/pond-motif.wav",
+    "splash": "assets/water-drop.wav"
+  },
+  "searchAppearance": {
+    "google": "#d3c49c",
+    "duck": "#dba47c"
+  }
+}

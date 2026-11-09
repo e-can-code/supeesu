@@ -1,0 +1,12 @@
+{
+  "iteration": 6,
+  "calendar_engine": "pure-civil-date-sampling",
+  "epoch": "2027-01-29",
+  "moon_phase_period_days": 36,
+  "weekly_signature_gate_policy": "known-gates-evaluated; unknown-gates-not-invented",
+  "weekly_persistence": "previous-week-tail-exponential-preview",
+  "annual_tree": "calendar-growth-fraction-provisional",
+  "pre_epoch": "prologue",
+  "live_clock": "30-second refresh while visible",
+  "status": "PROTOTYPE-not-full-historical-solver"
+}

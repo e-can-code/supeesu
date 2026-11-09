@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<defs><radialGradient id="water" cx=".50" cy=".2" r=".9"><stop stop-color="#83aaa0"/><stop offset=".50" stop-color="#487f82"/><stop offset="1" stop-color="#214e59"/></radialGradient>
+<pattern id="caustic" width="146" height="91" patternUnits="userSpaceOnUse"><path d="M6 26q34-18 66 1t74-2M-13 65q44-15 78 5t85-3" fill="none" stroke="#cce0cb" stroke-opacity=".15" stroke-width="2.6"/></pattern></defs>
+<rect width="1200" height="720" fill="url(#water)"/><rect width="1200" height="720" fill="url(#caustic)"/>
+<path d="M210 450Q500 391 900 443M277 585Q660 525 1004 589" fill="none" stroke="#d6e4cd" stroke-opacity=".09" stroke-width="22"/>
+<g fill="none" stroke="#e1e7d1" stroke-opacity=".15"><ellipse cx="514" cy="505" rx="220" ry="41"/><ellipse cx="748" cy="565" rx="170" ry="45"/></g>
+</svg>

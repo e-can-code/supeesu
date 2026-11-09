@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supeesu · Scene Zero Time Laboratory</title>
+  <link rel="stylesheet" href="lab.css">
+  <script type="module" src="lab.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">SUPEESU / SCENE ZERO / ENVIRONMENT 05</div>
+      <h1>The Time Laboratory</h1>
+      <p>A temporary diagnostic interface connected to permanent calendar and clock modules. No preferences or playback history are written.</p>
+    </header>
+    <section class="panel">
+      <div class="section-head"><h2>Three independent clocks</h2><span class="tag" id="mode" data-mode="live">LIVE · REAL TIME</span></div>
+      <div class="clocks">
+        <div><small>Real clock · unmodified</small><output id="realClock">—</output></div>
+        <div><small>World clock · simulated or live</small><output id="worldClock">—</output></div>
+        <div><small>Session clock · actual 05:30 boundary</small><output id="sessionClock">—</output></div>
+      </div>
+      <div class="inputs">
+        <label>World date and time <input id="dateTime" type="datetime-local" step="60"></label>
+        <label>World simulation speed
+          <select id="rate"><option value="0">Paused</option><option value="1" selected>1×</option><option value="10">10×</option><option value="60">60×</option><option value="3600">3,600×</option><option value="86400">86,400×</option></select>
+        </label>
+        <button id="seek">Seek world time</button>
+        <button id="real">Return to real time</button>
+      </div>
+      <p class="notice">Seeking or accelerating the world clock never modifies the actual real-time clock, countdowns, audio playback, or saved preferences.</p>
+    </section>
+    <section class="panel pond-panel">
+      <div class="section-head"><h2>Living Pool · environment preview</h2><span class="tag">REAL RENDERER · REPLACEABLE LAYERS</span></div>
+      <p class="notice">This is the production layer renderer and environment resolver driven by the Time Laboratory's World Clock. Click the water for a manual ripple. No laboratory sound, preferences, or playback history are written.</p>
+      <div id="pondPreview" class="pond-preview" aria-label="Animated Living Pool preview"></div>
+      <div class="environment-stats">
+        <div><span>Light</span><strong id="envLight">—</strong></div>
+        <div><span>Warmth</span><strong id="envWarmth">—</strong></div>
+        <div><span>Mist</span><strong id="envMist">—</strong></div>
+        <div><span>Fish activity</span><strong id="envFish">—</strong></div>
+        <div><span>Earth Moon (phase only)</span><strong id="envEarthMoon">—</strong></div>
+        <div><span>Jade Moon (phase only)</span><strong id="envJadeMoon">—</strong></div>
+        <div><span>Splash factor</span><strong id="envSplash">—</strong></div>
+        <div><span>Next splash event</span><strong id="nextSplash">—</strong></div>
+      </div>
+      <details><summary>Environment state and provenance</summary><pre id="environmentState">Loading environment…</pre></details>
+    </section>
+    <div class="columns">
+      <section class="panel">
+        <div class="section-head"><h2>Current World State</h2><span class="tag" id="worldStateMode" data-mode="live">LIVE · REAL TIME</span></div>
+        <p class="notice">This panel always describes the <strong>active World Clock</strong>, not the date selected in the scenario menu.</p>
+        <div class="world-state-summary"><span>Active world time</span><strong id="activeWorldDate">—</strong></div>
+        <p class="notice" id="worldModeExplanation">World time follows the actual clock.</p>
+        <div class="signals"><span id="seasonSignal">Season</span><span id="rhythmSignal">200-day</span><span id="microSignal">Microseason</span></div>
+        <pre id="calendarState">Loading calendar…</pre>
+      </section>
+      <section class="panel">
+        <h2>Selected Test Scenario</h2>
+        <p class="notice">Selecting a test does not change the World Clock. Apply it explicitly to pause the world at that test date.</p>
+        <label>Test date <select id="scenario"></select></label>
+        <div class="scenario-summary"><strong id="scenarioStatus" data-status="not-applied" role="status" aria-live="polite">Scenario not applied</strong><span>Test date: <span id="scenarioDate">—</span></span></div>
+        <p id="expected">Choose a diagnostic scenario.</p>
+        <button id="loadScenario">Jump world time to scenario</button>
+        <pre id="scenarioChecks" aria-live="polite">Scenario not applied.</pre>
+        <pre id="environmentScenarioChecks">Visual scenario not applied.</pre>
+        <p class="notice">Scenario state values are checked automatically against authored expectations. The parameter checks verify code outputs; the visible composition must still be judged by observation. No actual audio behavior is certified by visual tests.</p>
+      </section>
+    </div>
+    <section class="panel">
+      <div class="section-head"><h2>Daily sound boundary · dry run</h2><span class="tag">REAL POLICY · ISOLATED TEST</span></div>
+      <p class="notice">Evaluate the production 05:30 session rule against the currently selected <strong>World Clock date</strong> as a fixture. This does not start audio, modify preferences, or write the real session ledger.</p>
+      <button id="testDailyBoundary" type="button">Test 05:29:59 → 05:30:00</button>
+      <pre id="dailyBoundaryReport" aria-live="polite">Run the dry run to inspect the session transition.</pre>
+    </section>
+    <section class="panel">
+      <div class="section-head"><h2>Audio ownership spike</h2><span class="tag">Experimental / not daily playback</span></div>
+      <p>A quiet test tone can be started by clicking below. Open this page in two tabs: only one tab should acquire the exclusive audio lock. Hide the sounding tab to test persistent playback in the current browser.</p>
+      <div class="inputs"><button id="startTone">Play test tone</button><button id="stopTone">Stop test tone</button><output id="audioStatus">Idle</output></div>
+      <p class="notice">This test intentionally requires a user gesture and never records a daily playback success.</p>
+    </section>
+    <footer>Environment 05 · Actual layered Living Pool preview · Placeholder imagery · localhost preview port 8165</footer>
+  </main>
+</body>
+</html>

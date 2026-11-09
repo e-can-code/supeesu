@@ -1,0 +1,1431 @@
+{
+  "epoch": "2027-01-29",
+  "day_number_policy": "inclusive, 1-based",
+  "coverage_days": 200,
+  "weekly_profiles": [
+    {
+      "week": 1,
+      "id": "microseason_01",
+      "start_date": "2027-01-29",
+      "end_date": "2027-02-04",
+      "title": "Great Convergence / luminous aftermath",
+      "signature": "Great Tree blooms; first night-luminous visitors",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.08,
+        0.28,
+        0.61,
+        1,
+        0.86,
+        0.55,
+        0.24
+      ],
+      "daily_stage_actions": [
+        "precursor: Great Tree blooms; first night-luminous visitors",
+        "first change: Great Tree blooms; first night-luminous visitors",
+        "noticeable emergence: Great Tree blooms; first night-luminous visitors",
+        "primary expression: Great Tree blooms; first night-luminous visitors",
+        "secondary development: Great Tree blooms; first night-luminous visitors",
+        "release or sustained activity: Great Tree blooms; first night-luminous visitors",
+        "legacy and overlap: Great Tree blooms; first night-luminous visitors"
+      ],
+      "asset_bindings": [
+        "effect_great_convergence_luminous_aftermath"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Bloom residue and new pollination readiness",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 2,
+      "id": "microseason_02",
+      "start_date": "2027-02-05",
+      "end_date": "2027-02-11",
+      "title": "Lunar renewal",
+      "signature": "Lunar New Year flowering family and warmer reflective accents",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.06,
+        0.15,
+        0.32,
+        0.66,
+        1,
+        0.79,
+        0.52
+      ],
+      "daily_stage_actions": [
+        "precursor: Lunar New Year flowering family and warmer reflective accents",
+        "first change: Lunar New Year flowering family and warmer reflective accents",
+        "noticeable emergence: Lunar New Year flowering family and warmer reflective accents",
+        "primary expression: Lunar New Year flowering family and warmer reflective accents",
+        "secondary development: Lunar New Year flowering family and warmer reflective accents",
+        "release or sustained activity: Lunar New Year flowering family and warmer reflective accents",
+        "legacy and overlap: Lunar New Year flowering family and warmer reflective accents"
+      ],
+      "asset_bindings": [
+        "effect_lunar_renewal"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Aquatic seed readiness",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 3,
+      "id": "microseason_03",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-18",
+      "title": "Gathering dew",
+      "signature": "Dewkeeping flowers fill; small visitors arrive",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.04,
+        0.09,
+        0.21,
+        0.39,
+        0.61,
+        0.8,
+        1
+      ],
+      "daily_stage_actions": [
+        "precursor: Dewkeeping flowers fill; small visitors arrive",
+        "first change: Dewkeeping flowers fill; small visitors arrive",
+        "noticeable emergence: Dewkeeping flowers fill; small visitors arrive",
+        "primary expression: Dewkeeping flowers fill; small visitors arrive",
+        "secondary development: Dewkeeping flowers fill; small visitors arrive",
+        "release or sustained activity: Dewkeeping flowers fill; small visitors arrive",
+        "legacy and overlap: Dewkeeping flowers fill; small visitors arrive"
+      ],
+      "asset_bindings": [
+        "effect_gathering_dew"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "humidity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "soil_moisture",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Stored moisture in hanging canopy",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 4,
+      "id": "microseason_04",
+      "start_date": "2027-02-19",
+      "end_date": "2027-02-25",
+      "title": "First seed drift",
+      "signature": "Fine tree seeds drift in variable air currents",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.08,
+        0.28,
+        0.61,
+        1,
+        0.86,
+        0.55,
+        0.24
+      ],
+      "daily_stage_actions": [
+        "precursor: Fine tree seeds drift in variable air currents",
+        "first change: Fine tree seeds drift in variable air currents",
+        "noticeable emergence: Fine tree seeds drift in variable air currents",
+        "primary expression: Fine tree seeds drift in variable air currents",
+        "secondary development: Fine tree seeds drift in variable air currents",
+        "release or sustained activity: Fine tree seeds drift in variable air currents",
+        "legacy and overlap: Fine tree seeds drift in variable air currents"
+      ],
+      "asset_bindings": [
+        "effect_first_seed_drift"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Settled seeds in root niches",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 5,
+      "id": "microseason_05",
+      "start_date": "2027-02-26",
+      "end_date": "2027-03-04",
+      "title": "Moss awakening",
+      "signature": "Wet stone moss expands subtly",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.04,
+        0.09,
+        0.21,
+        0.39,
+        0.61,
+        0.8,
+        1
+      ],
+      "daily_stage_actions": [
+        "precursor: Wet stone moss expands subtly",
+        "first change: Wet stone moss expands subtly",
+        "noticeable emergence: Wet stone moss expands subtly",
+        "primary expression: Wet stone moss expands subtly",
+        "secondary development: Wet stone moss expands subtly",
+        "release or sustained activity: Wet stone moss expands subtly",
+        "legacy and overlap: Wet stone moss expands subtly"
+      ],
+      "asset_bindings": [
+        "effect_moss_awakening"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "humidity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "soil_moisture",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Persistent ground coverage",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 6,
+      "id": "microseason_06",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-11",
+      "title": "Bird visits",
+      "signature": "Familiar bird visits increase near railing",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.16,
+        0.46,
+        1,
+        0.81,
+        0.59,
+        0.34,
+        0.16
+      ],
+      "daily_stage_actions": [
+        "precursor: Familiar bird visits increase near railing",
+        "first change: Familiar bird visits increase near railing",
+        "noticeable emergence: Familiar bird visits increase near railing",
+        "primary expression: Familiar bird visits increase near railing",
+        "secondary development: Familiar bird visits increase near railing",
+        "release or sustained activity: Familiar bird visits increase near railing",
+        "legacy and overlap: Familiar bird visits increase near railing"
+      ],
+      "asset_bindings": [
+        "effect_bird_visits"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Possible resting-site preference",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 7,
+      "id": "microseason_07",
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-18",
+      "title": "Suspended mornings",
+      "signature": "Dense fine mist catches morning light",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.08,
+        0.28,
+        0.61,
+        1,
+        0.86,
+        0.55,
+        0.24
+      ],
+      "daily_stage_actions": [
+        "precursor: Dense fine mist catches morning light",
+        "first change: Dense fine mist catches morning light",
+        "noticeable emergence: Dense fine mist catches morning light",
+        "primary expression: Dense fine mist catches morning light",
+        "secondary development: Dense fine mist catches morning light",
+        "release or sustained activity: Dense fine mist catches morning light",
+        "legacy and overlap: Dense fine mist catches morning light"
+      ],
+      "asset_bindings": [
+        "effect_suspended_mornings"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "directed_light",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "cloud_opening",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Moisture and dew reserves",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 8,
+      "id": "microseason_08",
+      "start_date": "2027-03-19",
+      "end_date": "2027-03-25",
+      "title": "Hanging canopy leaf-out",
+      "signature": "Fine foliage opens at staggered branch tips",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.05,
+        0.13,
+        0.26,
+        0.44,
+        0.63,
+        0.82,
+        1.0
+      ],
+      "daily_stage_actions": [
+        "precursor: Fine foliage opens at staggered branch tips",
+        "first change: Fine foliage opens at staggered branch tips",
+        "noticeable emergence: Fine foliage opens at staggered branch tips",
+        "primary expression: Fine foliage opens at staggered branch tips",
+        "secondary development: Fine foliage opens at staggered branch tips",
+        "release or sustained activity: Fine foliage opens at staggered branch tips",
+        "legacy and overlap: Fine foliage opens at staggered branch tips"
+      ],
+      "asset_bindings": [
+        "effect_hanging_canopy_leaf_out"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "New canopy density",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 9,
+      "id": "microseason_09",
+      "start_date": "2027-03-26",
+      "end_date": "2027-04-01",
+      "title": "Dew gatherers",
+      "signature": "Moisture-feeding insects develop recognizable visits",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.05,
+        0.11,
+        0.24,
+        0.48,
+        0.76,
+        1,
+        0.67
+      ],
+      "daily_stage_actions": [
+        "precursor: Moisture-feeding insects develop recognizable visits",
+        "first change: Moisture-feeding insects develop recognizable visits",
+        "noticeable emergence: Moisture-feeding insects develop recognizable visits",
+        "primary expression: Moisture-feeding insects develop recognizable visits",
+        "secondary development: Moisture-feeding insects develop recognizable visits",
+        "release or sustained activity: Moisture-feeding insects develop recognizable visits",
+        "legacy and overlap: Moisture-feeding insects develop recognizable visits"
+      ],
+      "asset_bindings": [
+        "effect_dew_gatherers"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Pollination and flower response",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 10,
+      "id": "microseason_10",
+      "start_date": "2027-04-02",
+      "end_date": "2027-04-08",
+      "title": "Channel flowers",
+      "signature": "Small plants bloom near rills",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.05,
+        0.13,
+        0.26,
+        0.44,
+        0.63,
+        0.82,
+        1.0
+      ],
+      "daily_stage_actions": [
+        "precursor: Small plants bloom near rills",
+        "first change: Small plants bloom near rills",
+        "noticeable emergence: Small plants bloom near rills",
+        "primary expression: Small plants bloom near rills",
+        "secondary development: Small plants bloom near rills",
+        "release or sustained activity: Small plants bloom near rills",
+        "legacy and overlap: Small plants bloom near rills"
+      ],
+      "asset_bindings": [
+        "effect_channel_flowers"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "water_level",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "flow",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Seed stock and color accents",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 11,
+      "id": "microseason_11",
+      "start_date": "2027-04-09",
+      "end_date": "2027-04-15",
+      "title": "Early glassleaf",
+      "signature": "Selected leaves become subtly translucent",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.06,
+        0.19,
+        0.39,
+        0.72,
+        1,
+        0.69,
+        0.29
+      ],
+      "daily_stage_actions": [
+        "precursor: Selected leaves become subtly translucent",
+        "first change: Selected leaves become subtly translucent",
+        "noticeable emergence: Selected leaves become subtly translucent",
+        "primary expression: Selected leaves become subtly translucent",
+        "secondary development: Selected leaves become subtly translucent",
+        "release or sustained activity: Selected leaves become subtly translucent",
+        "legacy and overlap: Selected leaves become subtly translucent"
+      ],
+      "asset_bindings": [
+        "effect_early_glassleaf"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Leaf structural development",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 12,
+      "id": "microseason_12",
+      "start_date": "2027-04-16",
+      "end_date": "2027-04-22",
+      "title": "Pool deepening",
+      "signature": "Fish use different depths; aquatic stems rise",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.06,
+        0.15,
+        0.32,
+        0.66,
+        1,
+        0.79,
+        0.52
+      ],
+      "daily_stage_actions": [
+        "precursor: Fish use different depths; aquatic stems rise",
+        "first change: Fish use different depths; aquatic stems rise",
+        "noticeable emergence: Fish use different depths; aquatic stems rise",
+        "primary expression: Fish use different depths; aquatic stems rise",
+        "secondary development: Fish use different depths; aquatic stems rise",
+        "release or sustained activity: Fish use different depths; aquatic stems rise",
+        "legacy and overlap: Fish use different depths; aquatic stems rise"
+      ],
+      "asset_bindings": [
+        "effect_pool_deepening"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "water_level",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "flow",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Aquatic habitat complexity",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 13,
+      "id": "microseason_13",
+      "start_date": "2027-04-23",
+      "end_date": "2027-04-29",
+      "title": "Cloud gathering",
+      "signature": "Distant storm structures become substantial",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.04,
+        0.09,
+        0.21,
+        0.39,
+        0.61,
+        0.8,
+        1
+      ],
+      "daily_stage_actions": [
+        "precursor: Distant storm structures become substantial",
+        "first change: Distant storm structures become substantial",
+        "noticeable emergence: Distant storm structures become substantial",
+        "primary expression: Distant storm structures become substantial",
+        "secondary development: Distant storm structures become substantial",
+        "release or sustained activity: Distant storm structures become substantial",
+        "legacy and overlap: Distant storm structures become substantial"
+      ],
+      "asset_bindings": [
+        "effect_cloud_gathering"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "cloud_cover",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "celestial_visibility",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Atmospheric water reserve",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 14,
+      "id": "microseason_14",
+      "start_date": "2027-04-30",
+      "end_date": "2027-05-06",
+      "title": "Approach of rain",
+      "signature": "Wind and humidity build; channels fill",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.06,
+        0.15,
+        0.32,
+        0.66,
+        1,
+        0.79,
+        0.52
+      ],
+      "daily_stage_actions": [
+        "precursor: Wind and humidity build; channels fill",
+        "first change: Wind and humidity build; channels fill",
+        "noticeable emergence: Wind and humidity build; channels fill",
+        "primary expression: Wind and humidity build; channels fill",
+        "secondary development: Wind and humidity build; channels fill",
+        "release or sustained activity: Wind and humidity build; channels fill",
+        "legacy and overlap: Wind and humidity build; channels fill"
+      ],
+      "asset_bindings": [
+        "effect_approach_of_rain"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Soil primed for downpour",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 15,
+      "id": "microseason_15",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-13",
+      "title": "Seasonal threshold",
+      "signature": "Long Rains opening two-day distant downpour",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.05,
+        0.11,
+        0.24,
+        0.48,
+        0.76,
+        1,
+        0.67
+      ],
+      "daily_stage_actions": [
+        "precursor: Long Rains opening two-day distant downpour",
+        "first change: Long Rains opening two-day distant downpour",
+        "noticeable emergence: Long Rains opening two-day distant downpour",
+        "primary expression: Long Rains opening two-day distant downpour",
+        "secondary development: Long Rains opening two-day distant downpour",
+        "release or sustained activity: Long Rains opening two-day distant downpour",
+        "legacy and overlap: Long Rains opening two-day distant downpour"
+      ],
+      "asset_bindings": [
+        "effect_seasonal_threshold"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "humidity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "soil_moisture",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Saturated roots and channels",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 16,
+      "id": "microseason_16",
+      "start_date": "2027-05-14",
+      "end_date": "2027-05-20",
+      "title": "Wet stone radiance",
+      "signature": "Clearing light creates tiny prisms and wet stone glow",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.08,
+        0.28,
+        0.61,
+        1,
+        0.86,
+        0.55,
+        0.24
+      ],
+      "daily_stage_actions": [
+        "precursor: Clearing light creates tiny prisms and wet stone glow",
+        "first change: Clearing light creates tiny prisms and wet stone glow",
+        "noticeable emergence: Clearing light creates tiny prisms and wet stone glow",
+        "primary expression: Clearing light creates tiny prisms and wet stone glow",
+        "secondary development: Clearing light creates tiny prisms and wet stone glow",
+        "release or sustained activity: Clearing light creates tiny prisms and wet stone glow",
+        "legacy and overlap: Clearing light creates tiny prisms and wet stone glow"
+      ],
+      "asset_bindings": [
+        "effect_wet_stone_radiance"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "directed_light",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "cloud_opening",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Moss and fungal readiness",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 17,
+      "id": "microseason_17",
+      "start_date": "2027-05-21",
+      "end_date": "2027-05-27",
+      "title": "Root amphibians",
+      "signature": "Frogs visit saturated roots and stones",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.06,
+        0.19,
+        0.39,
+        0.72,
+        1,
+        0.69,
+        0.29
+      ],
+      "daily_stage_actions": [
+        "precursor: Frogs visit saturated roots and stones",
+        "first change: Frogs visit saturated roots and stones",
+        "noticeable emergence: Frogs visit saturated roots and stones",
+        "primary expression: Frogs visit saturated roots and stones",
+        "secondary development: Frogs visit saturated roots and stones",
+        "release or sustained activity: Frogs visit saturated roots and stones",
+        "legacy and overlap: Frogs visit saturated roots and stones"
+      ],
+      "asset_bindings": [
+        "effect_root_amphibians"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Habitat occupancy history",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 18,
+      "id": "microseason_18",
+      "start_date": "2027-05-28",
+      "end_date": "2027-06-03",
+      "title": "Cascades alive",
+      "signature": "Rills burble, stepped cascades strengthen",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.05,
+        0.13,
+        0.26,
+        0.44,
+        0.63,
+        0.82,
+        1.0
+      ],
+      "daily_stage_actions": [
+        "precursor: Rills burble, stepped cascades strengthen",
+        "first change: Rills burble, stepped cascades strengthen",
+        "noticeable emergence: Rills burble, stepped cascades strengthen",
+        "primary expression: Rills burble, stepped cascades strengthen",
+        "secondary development: Rills burble, stepped cascades strengthen",
+        "release or sustained activity: Rills burble, stepped cascades strengthen",
+        "legacy and overlap: Rills burble, stepped cascades strengthen"
+      ],
+      "asset_bindings": [
+        "effect_cascades_alive"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "water_level",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "flow",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Water-channel persistence",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 19,
+      "id": "microseason_19",
+      "start_date": "2027-06-04",
+      "end_date": "2027-06-10",
+      "title": "Aquatic new flowers",
+      "signature": "Second flowering family appears in pool",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.04,
+        0.09,
+        0.21,
+        0.39,
+        0.61,
+        0.8,
+        1
+      ],
+      "daily_stage_actions": [
+        "precursor: Second flowering family appears in pool",
+        "first change: Second flowering family appears in pool",
+        "noticeable emergence: Second flowering family appears in pool",
+        "primary expression: Second flowering family appears in pool",
+        "secondary development: Second flowering family appears in pool",
+        "release or sustained activity: Second flowering family appears in pool",
+        "legacy and overlap: Second flowering family appears in pool"
+      ],
+      "asset_bindings": [
+        "effect_aquatic_new_flowers"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "water_level",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "flow",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Seed and bloom history",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 20,
+      "id": "microseason_20",
+      "start_date": "2027-06-11",
+      "end_date": "2027-06-17",
+      "title": "The luminous veil",
+      "signature": "Suspended moisture and scattered rainbows",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.06,
+        0.19,
+        0.39,
+        0.72,
+        1,
+        0.69,
+        0.29
+      ],
+      "daily_stage_actions": [
+        "precursor: Suspended moisture and scattered rainbows",
+        "first change: Suspended moisture and scattered rainbows",
+        "noticeable emergence: Suspended moisture and scattered rainbows",
+        "primary expression: Suspended moisture and scattered rainbows",
+        "secondary development: Suspended moisture and scattered rainbows",
+        "release or sustained activity: Suspended moisture and scattered rainbows",
+        "legacy and overlap: Suspended moisture and scattered rainbows"
+      ],
+      "asset_bindings": [
+        "effect_the_luminous_veil"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "directed_light",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "cloud_opening",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Air and surface wetness",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 21,
+      "id": "microseason_21",
+      "start_date": "2027-06-18",
+      "end_date": "2027-06-24",
+      "title": "Full hanging canopy",
+      "signature": "Hanging sprays thicken, tiny niches form",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.04,
+        0.09,
+        0.21,
+        0.39,
+        0.61,
+        0.8,
+        1
+      ],
+      "daily_stage_actions": [
+        "precursor: Hanging sprays thicken, tiny niches form",
+        "first change: Hanging sprays thicken, tiny niches form",
+        "noticeable emergence: Hanging sprays thicken, tiny niches form",
+        "primary expression: Hanging sprays thicken, tiny niches form",
+        "secondary development: Hanging sprays thicken, tiny niches form",
+        "release or sustained activity: Hanging sprays thicken, tiny niches form",
+        "legacy and overlap: Hanging sprays thicken, tiny niches form"
+      ],
+      "asset_bindings": [
+        "effect_full_hanging_canopy"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Shelter for small organisms",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 22,
+      "id": "microseason_22",
+      "start_date": "2027-06-25",
+      "end_date": "2027-07-01",
+      "title": "Second tree flowering",
+      "signature": "Distinct restrained canopy blossoms",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.08,
+        0.28,
+        0.61,
+        1,
+        0.86,
+        0.55,
+        0.24
+      ],
+      "daily_stage_actions": [
+        "precursor: Distinct restrained canopy blossoms",
+        "first change: Distinct restrained canopy blossoms",
+        "noticeable emergence: Distinct restrained canopy blossoms",
+        "primary expression: Distinct restrained canopy blossoms",
+        "secondary development: Distinct restrained canopy blossoms",
+        "release or sustained activity: Distinct restrained canopy blossoms",
+        "legacy and overlap: Distinct restrained canopy blossoms"
+      ],
+      "asset_bindings": [
+        "effect_second_tree_flowering"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "humidity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "soil_moisture",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Pollination and fruit readiness",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 23,
+      "id": "microseason_23",
+      "start_date": "2027-07-02",
+      "end_date": "2027-07-08",
+      "title": "Garden-born clouds",
+      "signature": "Moisture rises into low slow clouds",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.05,
+        0.11,
+        0.24,
+        0.48,
+        0.76,
+        1,
+        0.67
+      ],
+      "daily_stage_actions": [
+        "precursor: Moisture rises into low slow clouds",
+        "first change: Moisture rises into low slow clouds",
+        "noticeable emergence: Moisture rises into low slow clouds",
+        "primary expression: Moisture rises into low slow clouds",
+        "secondary development: Moisture rises into low slow clouds",
+        "release or sustained activity: Moisture rises into low slow clouds",
+        "legacy and overlap: Moisture rises into low slow clouds"
+      ],
+      "asset_bindings": [
+        "effect_garden_born_clouds"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "cloud_cover",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "celestial_visibility",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Humidity and shading effects",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 24,
+      "id": "microseason_24",
+      "start_date": "2027-07-09",
+      "end_date": "2027-07-15",
+      "title": "Deep pool currents",
+      "signature": "Occasional upwelling; fish react to deep water",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.16,
+        0.46,
+        1,
+        0.81,
+        0.59,
+        0.34,
+        0.16
+      ],
+      "daily_stage_actions": [
+        "precursor: Occasional upwelling; fish react to deep water",
+        "first change: Occasional upwelling; fish react to deep water",
+        "noticeable emergence: Occasional upwelling; fish react to deep water",
+        "primary expression: Occasional upwelling; fish react to deep water",
+        "secondary development: Occasional upwelling; fish react to deep water",
+        "release or sustained activity: Occasional upwelling; fish react to deep water",
+        "legacy and overlap: Occasional upwelling; fish react to deep water"
+      ],
+      "asset_bindings": [
+        "effect_deep_pool_currents"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "water_level",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "flow",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Aquatic behavioral memory",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 25,
+      "id": "microseason_25",
+      "start_date": "2027-07-16",
+      "end_date": "2027-07-22",
+      "title": "Rain to gold",
+      "signature": "Several-day rain clears into radiant golden mist",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.05,
+        0.11,
+        0.24,
+        0.48,
+        0.76,
+        1,
+        0.67
+      ],
+      "daily_stage_actions": [
+        "precursor: Several-day rain clears into radiant golden mist",
+        "first change: Several-day rain clears into radiant golden mist",
+        "noticeable emergence: Several-day rain clears into radiant golden mist",
+        "primary expression: Several-day rain clears into radiant golden mist",
+        "secondary development: Several-day rain clears into radiant golden mist",
+        "release or sustained activity: Several-day rain clears into radiant golden mist",
+        "legacy and overlap: Several-day rain clears into radiant golden mist"
+      ],
+      "asset_bindings": [
+        "effect_rain_to_gold"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "directed_light",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "cloud_opening",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Saturated soil and rainbow conditions",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 26,
+      "id": "microseason_26",
+      "start_date": "2027-07-23",
+      "end_date": "2027-07-29",
+      "title": "Root community",
+      "signature": "Fungi, moss and tiny niches expand",
+      "development_type": "ACCUMULATE",
+      "daily_weights": [
+        0.05,
+        0.13,
+        0.26,
+        0.44,
+        0.63,
+        0.82,
+        1.0
+      ],
+      "daily_stage_actions": [
+        "precursor: Fungi, moss and tiny niches expand",
+        "first change: Fungi, moss and tiny niches expand",
+        "noticeable emergence: Fungi, moss and tiny niches expand",
+        "primary expression: Fungi, moss and tiny niches expand",
+        "secondary development: Fungi, moss and tiny niches expand",
+        "release or sustained activity: Fungi, moss and tiny niches expand",
+        "legacy and overlap: Fungi, moss and tiny niches expand"
+      ],
+      "asset_bindings": [
+        "effect_root_community"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "humidity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "soil_moisture",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Persistent rooted habitat",
+      "legacy_memory_days": 90,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 27,
+      "id": "microseason_27",
+      "start_date": "2027-07-30",
+      "end_date": "2027-08-05",
+      "title": "Seed and bird season",
+      "signature": "Birds forage and disperse seeds",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.16,
+        0.46,
+        1,
+        0.81,
+        0.59,
+        0.34,
+        0.16
+      ],
+      "daily_stage_actions": [
+        "precursor: Birds forage and disperse seeds",
+        "first change: Birds forage and disperse seeds",
+        "noticeable emergence: Birds forage and disperse seeds",
+        "primary expression: Birds forage and disperse seeds",
+        "secondary development: Birds forage and disperse seeds",
+        "release or sustained activity: Birds forage and disperse seeds",
+        "legacy and overlap: Birds forage and disperse seeds"
+      ],
+      "asset_bindings": [
+        "effect_seed_and_bird_season"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Settled seeds and visitation traces",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 28,
+      "id": "microseason_28",
+      "start_date": "2027-08-06",
+      "end_date": "2027-08-12",
+      "title": "The great clearing",
+      "signature": "Distant landforms return through thinning mist",
+      "development_type": "CONSEQUENCE",
+      "daily_weights": [
+        0.06,
+        0.15,
+        0.32,
+        0.66,
+        1,
+        0.79,
+        0.52
+      ],
+      "daily_stage_actions": [
+        "precursor: Distant landforms return through thinning mist",
+        "first change: Distant landforms return through thinning mist",
+        "noticeable emergence: Distant landforms return through thinning mist",
+        "primary expression: Distant landforms return through thinning mist",
+        "secondary development: Distant landforms return through thinning mist",
+        "release or sustained activity: Distant landforms return through thinning mist",
+        "legacy and overlap: Distant landforms return through thinning mist"
+      ],
+      "asset_bindings": [
+        "effect_the_great_clearing"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "directed_light",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "cloud_opening",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Lingering moisture and ocean swell",
+      "legacy_memory_days": 30,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    },
+    {
+      "week": 29,
+      "id": "microseason_29",
+      "start_date": "2027-08-13",
+      "end_date": "2027-08-19",
+      "title": "First Glasslight hints",
+      "signature": "Early refractive leaves and clearer light",
+      "development_type": "ARCH",
+      "daily_weights": [
+        0.06,
+        0.19,
+        0.39,
+        0.72,
+        1,
+        0.69,
+        0.29
+      ],
+      "daily_stage_actions": [
+        "precursor: Early refractive leaves and clearer light",
+        "first change: Early refractive leaves and clearer light",
+        "noticeable emergence: Early refractive leaves and clearer light",
+        "primary expression: Early refractive leaves and clearer light",
+        "secondary development: Early refractive leaves and clearer light",
+        "release or sustained activity: Early refractive leaves and clearer light",
+        "legacy and overlap: Early refractive leaves and clearer light"
+      ],
+      "asset_bindings": [
+        "effect_first_glasslight_hints"
+      ],
+      "asset_status": "OPEN-generator-or-source",
+      "environment_gates": [
+        {
+          "variable": "habitat_capacity",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        },
+        {
+          "variable": "temperature",
+          "threshold": 0.25,
+          "comparison": ">=",
+          "status": "DESIGN"
+        }
+      ],
+      "legacy": "Preparation for season III",
+      "legacy_memory_days": 14,
+      "overlap_with_adjacent_weeks": true,
+      "status": "DESIGN"
+    }
+  ],
+  "pool_flowering_separate": true,
+  "weights_semantics": "daily normalized intensity; interpolation between day anchors; ecological gates modulate intensity",
+  "approval": "all authored bindings and weights DESIGN pending visual QA"
+}

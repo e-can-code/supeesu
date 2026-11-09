@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "status": "development-diagnostic",
+  "scenarios": [
+    {
+      "id": "season-visual-1",
+      "group": "Eight seasons",
+      "label": "First Stirring",
+      "worldLocalDateTime": "2027-03-19T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-2",
+      "group": "Eight seasons",
+      "label": "Long Rains",
+      "worldLocalDateTime": "2027-06-27T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-3",
+      "group": "Eight seasons",
+      "label": "Glasslight",
+      "worldLocalDateTime": "2027-10-05T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-4",
+      "group": "Eight seasons",
+      "label": "High Radiance",
+      "worldLocalDateTime": "2028-01-13T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-5",
+      "group": "Eight seasons",
+      "label": "Copper Renewal",
+      "worldLocalDateTime": "2028-04-22T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-6",
+      "group": "Eight seasons",
+      "label": "Veiled Sea",
+      "worldLocalDateTime": "2028-07-31T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-7",
+      "group": "Eight seasons",
+      "label": "Silvering",
+      "worldLocalDateTime": "2028-11-08T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "season-visual-8",
+      "group": "Eight seasons",
+      "label": "Deep Renewal",
+      "worldLocalDateTime": "2029-02-16T12:00:00",
+      "description": "Season palette changes water, ground, tree, and fish activity."
+    },
+    {
+      "id": "clock-0400",
+      "group": "Day and night",
+      "label": "Predawn",
+      "worldLocalDateTime": "2027-02-07T04:00:00",
+      "description": "Blue predawn, reduced light and animal activity."
+    },
+    {
+      "id": "clock-0530",
+      "group": "Day and night",
+      "label": "5:30 growth begins",
+      "worldLocalDateTime": "2027-02-07T05:30:00",
+      "description": "The simulated daily tree growth starts; real playback ledger unchanged."
+    },
+    {
+      "id": "clock-0900",
+      "group": "Day and night",
+      "label": "Morning",
+      "worldLocalDateTime": "2027-02-07T09:00:00",
+      "description": "Brightening water and sky."
+    },
+    {
+      "id": "clock-1000",
+      "group": "Day and night",
+      "label": "Blue morning ends",
+      "worldLocalDateTime": "2027-02-07T10:00:00",
+      "description": "Morning indicator changes; ecological time remains continuous."
+    },
+    {
+      "id": "clock-1530",
+      "group": "Day and night",
+      "label": "Golden hour begins",
+      "worldLocalDateTime": "2027-02-07T15:30:00",
+      "description": "Warmth and sun color visibly shift."
+    },
+    {
+      "id": "clock-1830",
+      "group": "Day and night",
+      "label": "Golden hour ends",
+      "worldLocalDateTime": "2027-02-07T18:30:00",
+      "description": "Tree stops growing; splash probability begins increasing."
+    },
+    {
+      "id": "clock-2000",
+      "group": "Day and night",
+      "label": "Splash peak",
+      "worldLocalDateTime": "2027-02-07T20:00:00",
+      "description": "Event likelihood is 1.5\u00d7 the baseline; no instant audio on seek."
+    },
+    {
+      "id": "clock-2030",
+      "group": "Day and night",
+      "label": "Moonlit night",
+      "worldLocalDateTime": "2027-02-07T20:30:00",
+      "description": "Stars, approximate moon, and warmer darkness."
+    },
+    {
+      "id": "clock-2200",
+      "group": "Day and night",
+      "label": "Amber hours",
+      "worldLocalDateTime": "2027-02-07T22:00:00",
+      "description": "Warm red-amber night indicator."
+    },
+    {
+      "id": "clock-2230",
+      "group": "Day and night",
+      "label": "Deep sepia",
+      "worldLocalDateTime": "2027-02-07T22:30:00",
+      "description": "Deep warm night palette indicator."
+    },
+    {
+      "id": "short-rhythm-restart",
+      "group": "Independent rhythms",
+      "label": "200-day rhythm restarts",
+      "worldLocalDateTime": "2027-08-17T12:00:00",
+      "description": "Ecology day 201; 200-day rhythm returns to day 1."
+    },
+    {
+      "id": "long-rhythm-restart",
+      "group": "Independent rhythms",
+      "label": "400-day rhythm restarts",
+      "worldLocalDateTime": "2028-03-04T12:00:00",
+      "description": "Ecology day 401; 400-day rhythm returns to day 1."
+    },
+    {
+      "id": "ecology-restart",
+      "group": "Independent rhythms",
+      "label": "800-day ecology restarts",
+      "worldLocalDateTime": "2029-04-08T12:00:00",
+      "description": "Ecology day 1 in cycle 2; the independent seven-day rhythm need not match the first day of cycle 1."
+    },
+    {
+      "id": "visual-convergence",
+      "group": "Independent rhythms",
+      "label": "Living Pool \u00b7 January 29 convergence palette",
+      "worldLocalDateTime": "2028-01-29T20:00:00",
+      "description": "High Radiance combined with independently authored annual gold convergence treatment."
+    },
+    {
+      "id": "visual-july",
+      "group": "Independent rhythms",
+      "label": "Living Pool \u00b7 development-only July recolor",
+      "worldLocalDateTime": "2027-07-29T19:00:00",
+      "description": "Development-only conspicuous rose tint, not a canonical July convergence."
+    },
+    {
+      "id": "weekly-first",
+      "group": "Seven-day rhythm",
+      "label": "Day 1 / 7",
+      "worldLocalDateTime": "2027-01-29T12:00:00",
+      "description": "Seven diagnostic dots mark weekly progression."
+    },
+    {
+      "id": "weekly-seventh",
+      "group": "Seven-day rhythm",
+      "label": "Day 7 / 7",
+      "worldLocalDateTime": "2027-02-04T12:00:00",
+      "description": "Seven diagnostic dots filled; following day begins next microseason."
+    },
+    {
+      "id": "jade-new",
+      "group": "Moons",
+      "label": "Jade moon new",
+      "worldLocalDateTime": "2027-01-29T22:00:00",
+      "description": "Independent jade moon: provisional phase zero."
+    },
+    {
+      "id": "jade-full",
+      "group": "Moons",
+      "label": "Jade moon full",
+      "worldLocalDateTime": "2027-02-16T22:00:00",
+      "description": "Independent 36-day jade moon around full phase."
+    },
+    {
+      "id": "earth-full",
+      "group": "Moons",
+      "label": "Earth moon phase",
+      "worldLocalDateTime": "2027-02-22T22:00:00",
+      "description": "Synodic approximation; lunar ephemeris not yet validated."
+    },
+    {
+      "id": "synthetic-rain",
+      "group": "Weather",
+      "label": "Visible rainfall",
+      "worldLocalDateTime": "2027-02-05T13:00:00",
+      "description": "Deterministic fictional rain; diagonal droplets appear."
+    },
+    {
+      "id": "synthetic-rainbow",
+      "group": "Weather",
+      "label": "Post-rain rainbow",
+      "worldLocalDateTime": "2027-01-29T10:11:00",
+      "description": "Deterministic fictional rainbow; wetness decays after rainfall."
+    },
+    {
+      "id": "tree-february",
+      "group": "Tree",
+      "label": "February bloom",
+      "worldLocalDateTime": "2027-02-07T12:00:00",
+      "description": "Temporary blossoms and daily growth visible."
+    },
+    {
+      "id": "jan29-2026",
+      "group": "Annual convergence",
+      "label": "2026 Great Convergence",
+      "worldLocalDateTime": "2026-01-29T19:00:00",
+      "description": "Annual event overlays independent of ecology; final art direction not yet approved."
+    },
+    {
+      "id": "jan29-2027",
+      "group": "Annual convergence",
+      "label": "2027 Great Convergence",
+      "worldLocalDateTime": "2027-01-29T19:00:00",
+      "description": "Annual event overlays independent of ecology; final art direction not yet approved."
+    },
+    {
+      "id": "jan29-2028",
+      "group": "Annual convergence",
+      "label": "2028 Great Convergence",
+      "worldLocalDateTime": "2028-01-29T19:00:00",
+      "description": "Annual event overlays independent of ecology; final art direction not yet approved."
+    },
+    {
+      "id": "jan29-2029",
+      "group": "Annual convergence",
+      "label": "2029 Great Convergence",
+      "worldLocalDateTime": "2029-01-29T19:00:00",
+      "description": "Annual event overlays independent of ecology; final art direction not yet approved."
+    },
+    {
+      "id": "previous-cycle",
+      "group": "Historical cycle",
+      "label": "Previous cycle, day 720",
+      "worldLocalDateTime": "2026-11-09T12:00:00",
+      "description": "Deep Renewal; negative cycle index valid, no prologue."
+    },
+    {
+      "id": "daily-boundary",
+      "group": "Session",
+      "label": "Daily session boundary",
+      "worldLocalDateTime": "2027-01-29T05:30:00",
+      "description": "Only simulated session label changes; production audio ledger unaffected."
+    }
+  ]
+}

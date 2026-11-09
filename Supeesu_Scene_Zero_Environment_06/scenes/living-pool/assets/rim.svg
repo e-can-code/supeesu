@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<defs><linearGradient id="edge" x2=".35" y2="1"><stop stop-color="#d0c7a4"/><stop offset=".55" stop-color="#95a18c"/><stop offset="1" stop-color="#435e59"/></linearGradient></defs>
+<path d="M 170 506 C 181 414 384 356 617 361 C 830 351 1044 412 1072 497 C 1104 597 895 667 623 673 C 387 676 181 612 170 506 Z" fill="none" stroke="#233a41" stroke-width="34" stroke-opacity=".65"/>
+<path d="M 170 506 C 181 414 384 356 617 361 C 830 351 1044 412 1072 497 C 1104 597 895 667 623 673 C 387 676 181 612 170 506 Z" fill="none" stroke="url(#edge)" stroke-width="24"/>
+<path d="M 170 506 C 181 414 384 356 617 361 C 830 351 1044 412 1072 497 C 1104 597 895 667 623 673 C 387 676 181 612 170 506 Z" fill="none" stroke="#f5e6ba" stroke-width="3.5" stroke-opacity=".42"/>
+<g fill="#a0a98a" stroke="#53695f" stroke-width="2">
+<ellipse cx="210" cy="454" rx="30" ry="12" transform="rotate(-26 210 454)"/>
+<ellipse cx="435" cy="360" rx="33" ry="11" transform="rotate(-6 435 360)"/>
+<ellipse cx="823" cy="367" rx="36" ry="12" transform="rotate(11 823 367)"/>
+<ellipse cx="1049" cy="466" rx="34" ry="14" transform="rotate(44 1049 466)"/>
+<ellipse cx="965" cy="639" rx="36" ry="12" transform="rotate(-9 965 639)"/>
+<ellipse cx="439" cy="657" rx="38" ry="14" transform="rotate(6 439 657)"/>
+</g></svg>

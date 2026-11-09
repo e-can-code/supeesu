@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://supeesu.local/schemas/environment.schema.json",
+  "title": "Supeesu scene environment response profile v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "profileId",
+    "timeKnots",
+    "seasonPalettes",
+    "rhythmInfluences",
+    "splashBehavior",
+    "eventCompositions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "profileId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timeKnots": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "minute",
+          "illumination",
+          "warmth",
+          "mist",
+          "waterHighlights",
+          "fishActivity"
+        ],
+        "properties": {
+          "minute": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1440
+          },
+          "illumination": {
+            "$ref": "#/$defs/unit"
+          },
+          "warmth": {
+            "$ref": "#/$defs/unit"
+          },
+          "mist": {
+            "$ref": "#/$defs/unit"
+          },
+          "waterHighlights": {
+            "$ref": "#/$defs/unit"
+          },
+          "fishActivity": {
+            "$ref": "#/$defs/unit"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "seasonPalettes": {
+      "type": "object",
+      "minProperties": 8,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "ground",
+          "water",
+          "accent"
+        ],
+        "properties": {
+          "ground": {
+            "$ref": "#/$defs/color"
+          },
+          "water": {
+            "$ref": "#/$defs/color"
+          },
+          "accent": {
+            "$ref": "#/$defs/color"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "rhythmInfluences": {
+      "type": "object",
+      "required": [
+        "200DayMistAmplitude",
+        "400DayHighlightAmplitude",
+        "sevenDayAccentAmplitude"
+      ],
+      "additionalProperties": {
+        "$ref": "#/$defs/unit"
+      }
+    },
+    "splashBehavior": {
+      "type": "object",
+      "required": [
+        "bucketMinutes",
+        "baseProbability",
+        "eveningStartMinute",
+        "eveningPeakMinute",
+        "eveningEndMinute",
+        "maximumMultiplier",
+        "rippleDurationMs",
+        "seed"
+      ],
+      "properties": {
+        "bucketMinutes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "baseProbability": {
+          "$ref": "#/$defs/unit"
+        },
+        "eveningStartMinute": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1440
+        },
+        "eveningPeakMinute": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1440
+        },
+        "eveningEndMinute": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1440
+        },
+        "maximumMultiplier": {
+          "type": "number",
+          "minimum": 1
+        },
+        "rippleDurationMs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "seed": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "eventCompositions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "palette",
+          "strength",
+          "illuminationBoost",
+          "treatment"
+        ],
+        "properties": {
+          "palette": {
+            "$ref": "#/$defs/color"
+          },
+          "strength": {
+            "$ref": "#/$defs/unit"
+          },
+          "illuminationBoost": {
+            "$ref": "#/$defs/unit"
+          },
+          "treatment": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "skyColorKnots": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "minute",
+          "top",
+          "horizon"
+        ],
+        "properties": {
+          "minute": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1440
+          },
+          "top": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          },
+          "horizon": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "unit": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "color": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    }
+  },
+  "additionalProperties": false
+}

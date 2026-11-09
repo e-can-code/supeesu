@@ -1,0 +1,204 @@
+{
+  "$schema": "../schemas/calendar.schema.json",
+  "schemaVersion": 1,
+  "calendarId": "supeesu-living-world-ecology-v1",
+  "epochLocalDate": "2027-01-29",
+  "dateBasis": {
+    "worldDay": "local-civil-midnight",
+    "sessionDay": "separate-05:30-local-boundary",
+    "timeZone": "host-local-time-zone",
+    "preEpoch": "continuous-cycle"
+  },
+  "ecologyCycleDays": 800,
+  "ecologicalSeasons": [
+    {
+      "id": "first-stirring",
+      "label": "First Stirring",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.6,
+        "radiance": 0.62,
+        "biologicalActivity": 0.8
+      },
+      "status": "design"
+    },
+    {
+      "id": "long-rains",
+      "label": "Long Rains",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.94,
+        "radiance": 0.48,
+        "biologicalActivity": 0.95
+      },
+      "status": "design"
+    },
+    {
+      "id": "glasslight",
+      "label": "Glasslight",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.48,
+        "radiance": 0.86,
+        "biologicalActivity": 0.76
+      },
+      "status": "design"
+    },
+    {
+      "id": "high-radiance",
+      "label": "High Radiance",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.22,
+        "radiance": 0.98,
+        "biologicalActivity": 0.58
+      },
+      "status": "design"
+    },
+    {
+      "id": "copper-renewal",
+      "label": "Copper Renewal",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.42,
+        "radiance": 0.72,
+        "biologicalActivity": 0.82
+      },
+      "status": "design"
+    },
+    {
+      "id": "veiled-sea",
+      "label": "Veiled Sea",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.87,
+        "radiance": 0.38,
+        "biologicalActivity": 0.78
+      },
+      "status": "design"
+    },
+    {
+      "id": "silvering",
+      "label": "Silvering",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.45,
+        "radiance": 0.51,
+        "biologicalActivity": 0.48
+      },
+      "status": "design"
+    },
+    {
+      "id": "deep-renewal",
+      "label": "Deep Renewal",
+      "durationDays": 100,
+      "targets": {
+        "moisture": 0.55,
+        "radiance": 0.68,
+        "biologicalActivity": 0.7
+      },
+      "status": "design"
+    }
+  ],
+  "rhythms": {
+    "microseasonDays": 7,
+    "shortCycleDays": 200,
+    "longCycleDays": 400
+  },
+  "microseasonPlan": {
+    "source": "source/microseasons_first_200_days.original.json",
+    "coverageDays": 200,
+    "profileCount": 29,
+    "phasePolicy": "continuous-from-epoch",
+    "outsideCoverage": "unassigned",
+    "status": "design"
+  },
+  "lunarCycles": [
+    {
+      "id": "earth-moon",
+      "model": "verified-ephemeris-required",
+      "status": "not-implemented"
+    },
+    {
+      "id": "jade-moon",
+      "model": "independent-period",
+      "periodDays": 36,
+      "status": "design"
+    }
+  ],
+  "annualEvents": [
+    {
+      "id": "great-convergence",
+      "label": "Great Convergence",
+      "month": 1,
+      "day": 29,
+      "status": "canonical",
+      "developmentOnly": false
+    },
+    {
+      "id": "july-convergence-diagnostic",
+      "label": "July convergence diagnostic only (not canonical)",
+      "month": 7,
+      "day": 29,
+      "status": "provisional",
+      "developmentOnly": true
+    }
+  ],
+  "dailyMarkers": [
+    {
+      "localTime": "04:00",
+      "label": "optional deep blue predawn",
+      "status": "design"
+    },
+    {
+      "localTime": "05:30",
+      "label": "daylight and tree growth begin",
+      "status": "design"
+    },
+    {
+      "localTime": "10:00",
+      "label": "blue-rich morning ends",
+      "status": "design"
+    },
+    {
+      "localTime": "15:30",
+      "label": "golden hour begins",
+      "status": "design"
+    },
+    {
+      "localTime": "18:30",
+      "label": "golden hour ends; daily tree growth stops",
+      "status": "design"
+    },
+    {
+      "localTime": "20:30",
+      "label": "moonlit dark",
+      "status": "design"
+    },
+    {
+      "localTime": "22:00",
+      "label": "deepening red-amber",
+      "status": "design"
+    },
+    {
+      "localTime": "22:30",
+      "label": "deep sepia",
+      "status": "design"
+    }
+  ],
+  "futureSystems": {
+    "historicalWeather": "deterministic-fictional-diagnostic-only-not-real-history",
+    "lunarNewYear": "verified-lunisolar-source-required-not-implemented",
+    "animalPersistence": "fish-activity-diagnostic-only-no-individual-history",
+    "sceneEnvironmentResponse": "living-pool-environment-v1-implemented",
+    "earthLunarPhase": "approximate-synodic-diagnostic-only-not-ephemeris",
+    "jadeLunarPhase": "independent-36-day-placeholder-anchor-not-approved",
+    "treeDailyGrowth": "daily-05:30-to-18:30-diagnostic-only"
+  },
+  "sourceProvenance": [
+    "calendar/source/temporal_map.original.json",
+    "calendar/source/microseasons_first_200_days.original.json",
+    "calendar/source/events.original.json",
+    "calendar/source/calendar_it06.original.json"
+  ]
+}

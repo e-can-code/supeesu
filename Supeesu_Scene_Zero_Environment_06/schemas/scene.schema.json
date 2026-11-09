@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://supeesu.local/schemas/scene.schema.json",
+  "title": "Supeesu layered scene manifest v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "sceneId",
+    "stage",
+    "waterPath",
+    "layers",
+    "fish",
+    "audio"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sceneId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "fit"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "fit": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "waterPath": {
+      "type": "string",
+      "minLength": 8
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/layer"
+      }
+    },
+    "fish": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/fish"
+      }
+    },
+    "audio": {
+      "type": "object",
+      "required": [
+        "ambience",
+        "music",
+        "splash"
+      ],
+      "properties": {
+        "ambience": {
+          "type": "string",
+          "minLength": 1
+        },
+        "music": {
+          "type": "string",
+          "minLength": 1
+        },
+        "splash": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "searchAppearance": {
+      "type": "object",
+      "required": [
+        "google",
+        "duck"
+      ],
+      "properties": {
+        "google": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "duck": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "rect": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      ],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "point": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "layer": {
+      "type": "object",
+      "required": [
+        "id",
+        "z"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "asset": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "fish",
+            "ripples",
+            "glints",
+            "sky"
+          ]
+        },
+        "bounds": {
+          "$ref": "#/$defs/rect"
+        },
+        "z": {
+          "type": "number"
+        },
+        "clip": {
+          "const": "water"
+        },
+        "sway": {
+          "type": "boolean"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "asset",
+            "bounds"
+          ]
+        },
+        {
+          "required": [
+            "kind"
+          ]
+        }
+      ],
+      "additionalProperties": false
+    },
+    "fish": {
+      "type": "object",
+      "required": [
+        "id",
+        "asset",
+        "size",
+        "center",
+        "orbit",
+        "periodSeconds",
+        "phase"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "string"
+        },
+        "size": {
+          "$ref": "#/$defs/point"
+        },
+        "center": {
+          "$ref": "#/$defs/point"
+        },
+        "orbit": {
+          "$ref": "#/$defs/point"
+        },
+        "periodSeconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "phase": {
+          "type": "number"
+        },
+        "rotationOffset": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<defs><linearGradient id="soil" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#798878"/><stop offset=".55" stop-color="#556c5b"/><stop offset="1" stop-color="#324d47"/></linearGradient>
+<pattern id="tufts" width="97" height="53" patternUnits="userSpaceOnUse"><path d="M14 51l9-11 3 9 8-15m40 10 7-13 5 9" fill="none" stroke="#b3ae7f" stroke-opacity=".3" stroke-width="2"/></pattern></defs>
+<path d="M0 325 Q225 280 451 320 T897 303 Q1053 293 1200 325 V720 H0 Z" fill="url(#soil)"/>
+<path d="M0 325 Q225 280 451 320 T897 303 Q1053 293 1200 325 V720 H0 Z" fill="url(#tufts)"/>
+<path d="M0 385Q220 331 441 360T898 351Q1053 346 1200 372" fill="none" stroke="#b4ad81" stroke-width="12" opacity=".23"/>
+<g fill="#a3a48c" stroke="#53665b" stroke-width="3"><ellipse cx="157" cy="416" rx="43" ry="18" transform="rotate(-10 157 416)"/><ellipse cx="1068" cy="424" rx="49" ry="21" transform="rotate(14 1068 424)"/><ellipse cx="1115" cy="657" rx="44" ry="18"/><ellipse cx="92" cy="642" rx="30" ry="20"/></g>
+</svg>

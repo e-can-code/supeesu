@@ -1,0 +1,30 @@
+:root{color-scheme:dark;--paper:#172621;--panel:#21342c;--ink:#e5dac1;--sub:#a7b4a6;--line:#455c4d;--accent:#c0b389;font-family:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -20%,#3b594a 0%,var(--paper) 57%);color:var(--ink);min-height:100vh}main{width:min(1060px,calc(100% - 36px));margin:0 auto;padding:54px 0 50px}
+header{max-width:740px;margin-bottom:32px}.eyebrow{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:2px;color:var(--accent)}h1{font-size:clamp(33px,5vw,56px);font-weight:400;margin:13px 0}h2{font-size:20px;font-weight:400;margin:0 0 19px}p{line-height:1.6;color:var(--sub);margin:12px 0}
+.panel{background:rgba(33,52,44,.81);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:18px}.section-head{display:flex;align-items:start;justify-content:space-between;gap:15px}.tag{font:11px system-ui,sans-serif;color:#b5c8ae;background:#365445;padding:7px 11px;border-radius:99px}
+.clocks,.columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.clocks>div{background:#1a2a24;border-radius:6px;padding:16px;min-width:0}.clocks small{display:block;color:var(--sub);font:12px system-ui,sans-serif}.clocks output{display:block;font-size:clamp(14px,2vw,22px);margin-top:12px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.columns{grid-template-columns:1fr 1fr}
+.inputs{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin:20px 0 0}label{display:flex;flex-direction:column;gap:8px;font:12px system-ui,sans-serif;color:var(--sub)}input,select,button{font:14px system-ui,sans-serif;background:#1a2a24;color:var(--ink);border:1px solid #627160;border-radius:5px;padding:10px 12px}button{cursor:pointer;background:#3d5a47;border-color:#6e866c}button:hover,button:focus-visible{background:#59745e}button:disabled{opacity:.55;cursor:not-allowed}.notice{font:12px/1.6 system-ui,sans-serif;color:var(--sub)}
+.signals{display:flex;gap:8px;flex-wrap:wrap}.signals span{display:inline-block;padding:11px 13px;border-radius:5px;background:#374e43;color:#f4e6cd;font:12px system-ui,sans-serif}pre{overflow:auto;background:#162820;padding:17px;border-radius:5px;font-size:12px;line-height:1.7;color:#d2d9c9;max-height:390px}#scenario{max-width:100%;width:100%;margin-top:3px}#expected{min-height:75px}#audioStatus{font:12px system-ui,sans-serif;color:#d7d4b9}footer{font:12px system-ui,sans-serif;color:var(--sub);margin-top:30px}@media(max-width:760px){.columns,.clocks{grid-template-columns:1fr}.panel{padding:17px}main{padding-top:26px}}
+
+/* Status treatments distinguish active simulation from a merely selected test. */
+.tag[data-mode="live"]{background:#3b4f40;color:#c7d8ba}
+.tag[data-mode="simulated"]{background:#504833;color:#ead8a5}
+.tag[data-mode="paused"]{background:#4d3c42;color:#e8c3be}
+.world-state-summary,.scenario-summary{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin:13px 0;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:#1a2a24;font:12px system-ui,sans-serif}
+.world-state-summary span,.scenario-summary span{color:var(--sub)}
+.world-state-summary strong{font:16px Georgia,serif;font-variant-numeric:tabular-nums}
+#scenarioStatus[data-status="not-applied"]{color:#e9cd8e}
+#scenarioStatus[data-status="applied"]{color:#c2dbc1}
+#scenarioStatus[data-status="none"]{color:var(--sub)}
+
+/* Environment 03 previews the reusable renderer rather than an illustrative screenshot. */
+.pond-panel{padding-bottom:20px}
+.pond-preview{position:relative;aspect-ratio:12/7;max-height:525px;overflow:hidden;border-radius:7px;background:#456759;border:1px solid #8ca09055}
+.pond-preview svg{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.environment-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:13px}
+.environment-stats>div{background:#1a2a24;border-radius:5px;padding:11px 13px;display:flex;justify-content:space-between;gap:9px;align-items:center}
+.environment-stats span{font:11px system-ui,sans-serif;color:var(--sub)}
+.environment-stats strong{font:15px Georgia,serif;font-variant-numeric:tabular-nums}
+.pond-panel details{margin-top:15px}.pond-panel summary{cursor:pointer;font:12px system-ui,sans-serif;color:#c6cdb7}
+#environmentScenarioChecks{white-space:pre-wrap;max-height:230px}
+@media(max-width:760px){.environment-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}

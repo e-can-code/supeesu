@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "profileId": "living-pool-environment-v1",
+  "timeKnots": [
+    {
+      "minute": 0,
+      "illumination": 0.14,
+      "warmth": 0.32,
+      "mist": 0.35,
+      "waterHighlights": 0.13,
+      "fishActivity": 0.35
+    },
+    {
+      "minute": 240,
+      "illumination": 0.12,
+      "warmth": 0.16,
+      "mist": 0.42,
+      "waterHighlights": 0.1,
+      "fishActivity": 0.3
+    },
+    {
+      "minute": 330,
+      "illumination": 0.28,
+      "warmth": 0.24,
+      "mist": 0.58,
+      "waterHighlights": 0.21,
+      "fishActivity": 0.55
+    },
+    {
+      "minute": 540,
+      "illumination": 0.83,
+      "warmth": 0.45,
+      "mist": 0.2,
+      "waterHighlights": 0.62,
+      "fishActivity": 0.91
+    },
+    {
+      "minute": 780,
+      "illumination": 0.96,
+      "warmth": 0.4,
+      "mist": 0.12,
+      "waterHighlights": 0.85,
+      "fishActivity": 1.0
+    },
+    {
+      "minute": 930,
+      "illumination": 0.85,
+      "warmth": 0.67,
+      "mist": 0.15,
+      "waterHighlights": 0.76,
+      "fishActivity": 0.89
+    },
+    {
+      "minute": 1110,
+      "illumination": 0.53,
+      "warmth": 0.91,
+      "mist": 0.25,
+      "waterHighlights": 0.56,
+      "fishActivity": 0.74
+    },
+    {
+      "minute": 1230,
+      "illumination": 0.26,
+      "warmth": 0.57,
+      "mist": 0.34,
+      "waterHighlights": 0.28,
+      "fishActivity": 0.46
+    },
+    {
+      "minute": 1350,
+      "illumination": 0.16,
+      "warmth": 0.52,
+      "mist": 0.39,
+      "waterHighlights": 0.16,
+      "fishActivity": 0.36
+    },
+    {
+      "minute": 1440,
+      "illumination": 0.14,
+      "warmth": 0.32,
+      "mist": 0.35,
+      "waterHighlights": 0.13,
+      "fishActivity": 0.35
+    }
+  ],
+  "seasonPalettes": {
+    "first-stirring": {
+      "ground": "#748b67",
+      "water": "#4d8c84",
+      "accent": "#d9c49c"
+    },
+    "long-rains": {
+      "ground": "#548267",
+      "water": "#327e84",
+      "accent": "#a4c7b0"
+    },
+    "glasslight": {
+      "ground": "#858e79",
+      "water": "#639c9c",
+      "accent": "#dce7c7"
+    },
+    "high-radiance": {
+      "ground": "#99805f",
+      "water": "#6c9b8c",
+      "accent": "#e5bd77"
+    },
+    "copper-renewal": {
+      "ground": "#8e755f",
+      "water": "#6a8882",
+      "accent": "#d4a67c"
+    },
+    "veiled-sea": {
+      "ground": "#617c6c",
+      "water": "#467c87",
+      "accent": "#a6bbac"
+    },
+    "silvering": {
+      "ground": "#738383",
+      "water": "#537f8e",
+      "accent": "#c0c9c9"
+    },
+    "deep-renewal": {
+      "ground": "#657862",
+      "water": "#4f7975",
+      "accent": "#b2b68d"
+    }
+  },
+  "rhythmInfluences": {
+    "200DayMistAmplitude": 0.075,
+    "400DayHighlightAmplitude": 0.1,
+    "sevenDayAccentAmplitude": 0.055
+  },
+  "splashBehavior": {
+    "bucketMinutes": 4,
+    "baseProbability": 0.105,
+    "eveningStartMinute": 1110,
+    "eveningPeakMinute": 1200,
+    "eveningEndMinute": 1290,
+    "maximumMultiplier": 1.5,
+    "rippleDurationMs": 2200,
+    "seed": "living-pool-splashes-v1"
+  },
+  "eventCompositions": {
+    "great-convergence": {
+      "palette": "#f2c77f",
+      "strength": 0.52,
+      "illuminationBoost": 0.11,
+      "treatment": "authored-event-placeholder"
+    },
+    "july-convergence-diagnostic": {
+      "palette": "#db8297",
+      "strength": 0.84,
+      "illuminationBoost": 0.08,
+      "treatment": "development-only-obvious-recolor"
+    }
+  },
+  "skyColorKnots": [
+    {
+      "minute": 0,
+      "top": "#231720",
+      "horizon": "#50332e"
+    },
+    {
+      "minute": 270,
+      "top": "#34232f",
+      "horizon": "#685044"
+    },
+    {
+      "minute": 360,
+      "top": "#334759",
+      "horizon": "#ca8679"
+    },
+    {
+      "minute": 480,
+      "top": "#5487a2",
+      "horizon": "#e0c1a1"
+    },
+    {
+      "minute": 780,
+      "top": "#568fac",
+      "horizon": "#c2d9b7"
+    },
+    {
+      "minute": 1020,
+      "top": "#6685a1",
+      "horizon": "#e7bc96"
+    },
+    {
+      "minute": 1140,
+      "top": "#4b506a",
+      "horizon": "#e9a071"
+    },
+    {
+      "minute": 1240,
+      "top": "#332332",
+      "horizon": "#9b6c60"
+    },
+    {
+      "minute": 1320,
+      "top": "#3d2430",
+      "horizon": "#70473e"
+    },
+    {
+      "minute": 1350,
+      "top": "#30212b",
+      "horizon": "#583a32"
+    },
+    {
+      "minute": 1440,
+      "top": "#231720",
+      "horizon": "#50332e"
+    }
+  ]
+}
