@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a342f">
+  <title>Supeesu · Living Pool</title>
+  <link rel="stylesheet" href="scene.css">
+  <script type="module" src="scene.js"></script>
+</head>
+<body>
+  <main id="livingPool" aria-label="Living Pool scene">
+    <div id="pond" class="pond"></div>
+    <form id="searchForm" class="search-form" role="search" autocomplete="off"><div id="searchDots" class="search-dots" hidden><button type="button" id="duckDot" aria-label="DuckDuckGo search" title="DuckDuckGo"></button><button type="button" id="googleDot" aria-label="Google search" title="Google"></button></div><input id="searchInput" aria-label="Search Google or DuckDuckGo" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" /></form>
+    <button id="homeLabToggle" type="button" aria-label="Show laboratory instruments" title="Show laboratory instruments (Ctrl+Shift+L)">✧</button>
+    <div class="signature" aria-hidden="true">SUPEESU <span>·</span> LIVING POOL <span>·</span> E06</div>
+    <aside class="world-orrery" aria-label="Time orrery">
+      <div class="orrery-head"><span>THE WORLD ORRERY</span><span class="orrery-ornament">✧</span></div>
+      <div class="orrery-stage" id="orreryStage"></div>
+      <div class="orrery-caption"><span id="orreryDate">—</span><span id="orreryMode">—</span></div>
+      <div class="orrery-tools"><button id="orreryLive" title="Return to actual current time">↺ LIVE</button><button id="orreryFlow" title="Run world-time simulation at the selected accelerated speed">▶ FLOW</button></div>
+      <div class="flow-options"><label for="orrerySpeed">TIME FLOW</label><select id="orrerySpeed" aria-label="World simulation speed"><option value="1">1×</option><option value="60">60×</option><option value="3600" selected>3,600×</option><option value="86400">86,400×</option></select></div>
+      <div id="flowHelp" class="flow-help">1 world day per 24 seconds</div>
+      <div class="orrery-legend"><span><i class="dot outer"></i> 800-day ecology</span><span><i class="dot middle"></i> seven-day rhythm</span><span><i class="dot inner"></i> 24-hour light</span></div>
+    </aside>
+    <div class="environment-diagnostics" id="environmentDiagnostics" aria-label="Temporary environment indicators">
+      <span id="lightReadout">SKY · LIGHT</span><span id="rhythmReadout">ECOLOGY · MIST</span><span id="calendarReadout">MOONS · TREE · WEATHER</span><span id="visibilityReadout">VISUALS ACTIVE</span>
+    </div>
+    <div class="hud">
+      <div class="scene-label"><strong>Living Pool</strong><span id="seasonName">Connecting to the calendar…</span></div>
+      <nav class="controls" aria-label="Soundscape controls">
+        <button id="stillToggle" type="button" aria-label="Pause visual movement" title="Pause or resume visual movement">◫</button>
+        <button id="diagnosticToggle" type="button" aria-label="Toggle temporary environment readouts" aria-pressed="true" title="Show or hide diagnostic readouts">◈</button>
+        <button id="soundToggle" type="button" title="Start or stop pond ambience" aria-label="Start pond ambience">◖♪</button>
+        <button id="audioTest" type="button" title="Play an audible diagnostic chime through the pond audio engine" aria-label="Test audible sound">♮</button>
+        <button id="musicToggle" type="button" title="Play or pause optional music" aria-label="Toggle music">♫</button>
+        <button id="persistToggle" type="button" title="Background sound defaults on. Click to change." aria-pressed="false" aria-label="Persistent audio off">↗</button>
+        <button id="scenarioToggle" type="button" title="Open world calendar test guide" aria-label="Open calendar scenarios">☷</button>
+        <a href="../dev/" title="Open the Time Laboratory">⌑</a>
+      </nav>
+    </div>
+    <aside id="scenarioPanel" class="scenario-panel" hidden aria-label="Calendar coverage test guide">
+      <div class="scenario-title"><strong>CALENDAR FIELD GUIDE</strong><button id="closeScenarios" type="button" aria-label="Close field guide">×</button></div>
+      <p>Choose a condition to travel directly to it. These are diagnostic effects, not finished artwork.</p>
+      <select id="scenarioSelect" aria-label="Choose calendar test"></select>
+      <button id="scenarioGo" type="button">VISIT SCENARIO</button>
+      <p id="scenarioDescription"></p>
+      <div id="scenarioState" class="scenario-state"></div>
+    </aside>
+    <p class="status" id="sceneStatus" role="status" aria-live="polite">Initializing…</p>
+    <span class="audio-diagnostic" aria-label="Web Audio engine state">AUDIO <span id="audioDiagnostic">—</span> · <span id="audioLevel">LEVEL —</span> · <span id="persistState">—</span> · <span id="dailyAudioState">SESSION CHECKING</span></span>
+  </main>
+</body>
+</html>

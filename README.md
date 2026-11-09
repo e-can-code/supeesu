@@ -1,3 +1,7 @@
+## GitHub Pages root-ready edition
+
+The root `index.html` now opens the Living Pool directly. See `GITHUB_PAGES_SETUP.md` for upload instructions. The previous `/scene/` entry point is retained for compatibility.
+
 # Supeesu — Scene Zero / Environment 06: Daily Home
 
 Staging build based on Environment 05. Production homepage is untouched.
