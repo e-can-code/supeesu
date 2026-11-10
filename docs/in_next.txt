@@ -9,3 +9,5 @@ WORLD FOUNDATION 08 — NEXT
 8. Continue artistic refinement through relationship-based cohesion, not compulsory uniformity.
 
 Repair 08.1: Manually verify the nested instruments in Windows Firefox using RUN_PREVIEW.bat. Check MIME and network console; run event creation/editing, month navigation, historical import, and document empty-state behavior. Verify independent View and Garden's Edge scenes in the next artistic pass.
+
+08.2 follow-up: verify Firefox new-tab reload persistence on actual GitHub Pages origin; test origin transfer with JSON export/import. Review historical times for current fitness before treating as commitments.

@@ -6,9 +6,9 @@ This iteration preserves **The Long Voyage** Helm and the integrated Environment
 
 Extract the whole folder, run `RUN_PREVIEW.bat`, then visit `http://localhost:8178/`. This is a staging application; it does not replace your existing GitHub Pages homepage.
 
-## First-run schedule
+## First-run schedule — Week 01 automatic recovery
 
-Enter **Helm**. If the shared schedule is empty, the observatory offers **Recover historical week**. The small Helm navigation bridge offers the same action. Review the counts in the preview and explicitly choose whether to add the archived Quiet Hours activities. **These are historical examples and may no longer match your current obligations.** They are never auto-imported. If an event ID already exists, the existing record is kept.
+**Daily Living Week 01 behavior:** On the first open in a browser/origin with no saved activities and no prior initialization marker, the packaged historical Quiet Hours week is automatically copied into the personal schedule. Every subsequent new tab uses the same saved local records; nothing is re-imported. Existing activities are never replaced, and deleting the entire schedule will not resurrect the historical week. The manual import remains available if explicitly wanted later. **The historical schedule is only a starting template, not confirmation of current obligations.** Please review and edit its times and commitments. Browser storage is per origin (local preview and GitHub Pages differ); export/import JSON to transfer data or make backups.
 
 You can also use Atelier → Schedule → Import Quiet Hours examples.
 
@@ -39,3 +39,7 @@ The user-observed failure was that Today, Star Map, Month, and the planning crys
 This repair bundles the month/calendar helpers and Quiet Hours renderer into `integrations/quiet-hours-helm/helm-runtime.js`, loaded as a standard deferred script. Instrument mode is applied immediately by the HTML before loading the script, so the old Quiet Hours room cannot appear inside an instrument panel. A loading/failure message is shown instead of a misleading duplicate scene. The existing Long Voyage outer scene and all event data keys are unchanged.
 
 For review: click Today, Star Map, Month, Rituals, and Make Room in turn. Each should show different content. Test historical recovery separately. Browser-based verification was blocked in the execution environment; these changes are based on code inspection and automated checks, not a claimed Firefox pass.
+
+## 08.2 — Week 01 startup convenience
+
+The bundled historical rhythm is automatically installed **once**, only for empty fresh personal calendars. An initialization marker prevents repeated imports on subsequent new tabs or after deletion. User schedules and notes remain authoritative, the default arrival remains Atelier, and the Helm instruments / audio / scenes are unchanged.

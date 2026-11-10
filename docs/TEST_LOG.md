@@ -8,3 +8,5 @@ Automated test outcomes are appended after verification. Firefox manual testing 
 - Historical Quiet Hours default JSON: retained as an optional import source, not automatically activated.
 - Browser smoke test: BLOCKED by test environment policy (`net::ERR_BLOCKED_BY_ADMINISTRATOR` for both local HTTP and intercepted test hostname). Not certified.
 - Firefox on the user's computer: NOT TESTED in this release.
+
+08.2: added tests/weekRestore.test.mjs for fresh/returning/new-tab, existing schedule, deletion persistence, deliberate empty schedule, and malformed source data. Browser Firefox verification remains outstanding.

@@ -1,11 +1,11 @@
 {
   "name": "supeesu2-world-foundation-08",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check src/app.js && node --check src/core.js && node --check src/store.js && node --check src/helm.js && node --check src/navigation.js && node --check src/hoverIntent.js && node --check src/quietHoursBridge.js && node --check integrations/quiet-hours-helm/helm.js && node --check integrations/quiet-hours-helm/operations/app.js && node --check integrations/quiet-hours-helm/operations/planner.js && node --check integrations/living-pool/scene/scene.js && node --check integrations/quiet-hours-helm/long-voyage/long-voyage.js && node --check integrations/quiet-hours-helm/long-voyage/voyage-instruments.js && node --check integrations/quiet-hours-helm/long-voyage/voyage-schedule.js && node --check integrations/quiet-hours-helm/calendarModel.mjs && node --check integrations/quiet-hours-helm/helm-runtime.js",
+    "check": "node --check src/app.js && node --check src/core.js && node --check src/store.js && node --check src/weekRestore.js && node --check src/helm.js && node --check src/navigation.js && node --check src/hoverIntent.js && node --check src/quietHoursBridge.js && node --check integrations/quiet-hours-helm/helm.js && node --check integrations/quiet-hours-helm/operations/app.js && node --check integrations/quiet-hours-helm/operations/planner.js && node --check integrations/living-pool/scene/scene.js && node --check integrations/quiet-hours-helm/long-voyage/long-voyage.js && node --check integrations/quiet-hours-helm/long-voyage/voyage-instruments.js && node --check integrations/quiet-hours-helm/long-voyage/voyage-schedule.js && node --check integrations/quiet-hours-helm/calendarModel.mjs && node --check integrations/quiet-hours-helm/helm-runtime.js",
     "serve": "python3 -m http.server 8178"
   }
 }

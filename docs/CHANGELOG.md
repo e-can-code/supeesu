@@ -15,3 +15,9 @@
 - Exports now include Quiet Hours planning overrides when present; core imported records remain validated.
 - Extended shared event editor with semantic role: event, routine, ritual, mode.
 - No change to established audio automatic-start behavior or ecological clock ownership.
+
+## 08.2 — Automatic weekly schedule recovery
+- One-time historical week seed on first use only for otherwise empty schedules.
+- Never overwrite existing events or re-import after user deletions.
+- LocalStorage per-origin persistence and one-time initialization unit tests.
+- No changes to Atelier arrival, Long Voyage, Pool, or audio.
