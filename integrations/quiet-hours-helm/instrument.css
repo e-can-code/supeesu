@@ -1,0 +1,32 @@
+
+/* Original Quiet Hours instrument screens, embedded without duplicating its room. */
+body.instrument-mode{overflow:hidden;background:#0b1c25}
+body.instrument-mode .world,body.instrument-mode #stars,body.instrument-mode .veil{display:none!important}
+body.instrument-mode .overlay{position:fixed;inset:0;transform:none;width:100%;height:100%;max-height:none;top:0;left:0;border:0;border-radius:0;box-shadow:none;background:linear-gradient(145deg,#18363ce8,#071a24f8 80%)}
+body.instrument-mode .overlay-head{padding:14px 20px 9px}
+body.instrument-mode .overlay h2{font-size:clamp(24px,3vw,36px)}
+body.instrument-mode .overlay-body{padding:15px 22px 22px}
+body.instrument-mode .close{display:none}
+body.instrument-mode .map-frame{height:min(60vh,550px)}
+body.instrument-mode .workframe{min-height:500px}
+@media(max-width:700px){body.instrument-mode .overlay-body{padding:10px}body.instrument-mode .overlay-head{padding:12px}}
+
+/* The month shares the exact recurrence projection used by the day and week. */
+.month-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-top:13px}
+.month-head{text-align:center;font:11px system-ui,sans-serif;letter-spacing:.14em;color:#cbb58a;padding:9px 1px}
+.month-cell{min-width:0;min-height:105px;background:linear-gradient(155deg,#15363bc7,#0c222fc9);border:1px solid #8bb4a34d;padding:5px;overflow:hidden}
+.month-cell.outside{opacity:.38}.month-cell.today-cell{border:1px solid #e3ba83}
+.month-date{display:block;font:14px Georgia,serif;color:#e4c79d;background:none;border:none;padding:3px 5px;margin-bottom:5px;cursor:pointer}
+.month-activity{display:block;text-align:left;width:100%;margin:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border:1px solid #8cb6aa35;background:#274c5077;color:#dbe8d7;padding:4px 5px;font:10px system-ui,sans-serif;cursor:pointer}
+.month-activity span{color:#e5b97c}.month-activity:hover,.month-activity:focus-visible{background:#42666b;border-color:#e7bc7e}
+.month-more{border:none;background:transparent;color:#d3ae7b;font:10px system-ui,sans-serif;cursor:pointer}
+.ritual-sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:12px 0}
+.ritual-sections h3{font:19px Georgia,serif;color:#e5c899;grid-column:1/-1;margin:7px 0 0}
+.ritual-card{background:#14323cb3;border-left:2px solid #bf9d69;padding:10px;display:flex;flex-direction:column;gap:6px}
+.ritual-card small{color:#abc4b6}
+@media(max-width:700px){.month-calendar{gap:1px}.month-cell{padding:2px;min-height:64px}.month-activity{font-size:8px;padding:3px 1px}.month-activity span{display:none}}
+
+/* The instrument must never display a second complete observatory when JS is delayed. */
+body.instrument-mode #instrumentLoading{display:block;position:fixed;inset:0;padding:48px 36px;background:#091c25;color:#d8c59d;font:16px system-ui,sans-serif}
+body.instrument-mode #instrumentLoading[hidden]{display:none}
+body.instrument-mode .overlay:not([hidden]){display:flex!important}

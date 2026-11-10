@@ -1,0 +1,110 @@
+:root{color-scheme:dark;--ink:#e1d6b5;--soft:#b3c7b8;--line:#b6ac8466;--deep:#091c23}*{box-sizing:border-box}body{margin:0;overflow:hidden;background:#091b22;color:var(--ink);font-family:Georgia,serif}button,input,textarea,select{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #d8b989;outline-offset:3px}.world{position:fixed;inset:0;overflow:hidden;background:linear-gradient(180deg,#101c31,#264b53 53%,#1b3435 72%,#101d22);isolation:isolate}.sky,.architecture,.veil,.landscape{position:absolute;inset:0;pointer-events:none}.sky{background:radial-gradient(ellipse at 67% 27%,#ad7e7860,transparent 35%),linear-gradient(180deg,#152c40,#49645e 80%,#173238)}.stars{position:absolute;inset:0;background-image:radial-gradient(#e3d4b8 1px,transparent 2px),radial-gradient(#b1c4c3 1px,transparent 2px);background-size:173px 191px,117px 143px;background-position:17px 31px,59px 67px;opacity:.45}.celestial{position:absolute;top:14%;right:18%;width:min(27vw,260px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 25%,#c3b5a0,#708c8d 37%,#2b5262 67%,#162d40);box-shadow:0 0 80px #a5d1c144,0 0 0 18px #b5c2a51c}.arch{position:absolute;z-index:2;background:linear-gradient(90deg,#0d2326,#52605a,#182f33);box-shadow:0 0 35px #040e14aa}.arch-left{left:0;top:0;width:9%;height:100%;border-radius:0 45% 0 0}.arch-right{right:0;top:0;width:9%;height:100%;transform:scaleX(-1);border-radius:0 45% 0 0}.arch-top{top:-8%;left:0;right:0;height:19%;border-radius:0 0 50% 50%;border-bottom:12px solid #697467}.horizon{position:absolute;left:0;right:0;top:66%;height:4px;background:linear-gradient(90deg,transparent,#c1c09b88,transparent)}.water{position:absolute;top:66%;bottom:0;left:0;right:0;background:repeating-radial-gradient(ellipse at 50% -35%,transparent 0 21px,#aac3aa18 24px 27px,transparent 30px 61px),linear-gradient(#335d5c99,#091f29);animation:water 17s ease-in-out infinite alternate}.floor{position:absolute;bottom:-30%;left:-20%;width:140%;height:55%;background:linear-gradient(#52615a66,#0a2026),radial-gradient(ellipse at 50% 0,#a8a98255,transparent 60%);border-top:4px solid #a2aa8766;transform:perspective(700px) rotateX(27deg)}.tree{position:absolute;left:10%;bottom:17%;width:22%;height:48%;opacity:.7;background:radial-gradient(ellipse at 45% 18%,#365f52 0 26%,transparent 28%),radial-gradient(ellipse at 72% 28%,#466a57 0 23%,transparent 25%),linear-gradient(88deg,transparent 42%,#54463c 43% 50%,transparent 51%);filter:drop-shadow(8px 10px 10px #06161a)}.veil{z-index:4;background:linear-gradient(180deg,#15102318,#281a1b44);pointer-events:none}.top,.bottom,.view-controls{position:fixed;z-index:8;display:flex;align-items:center;gap:12px}.top{top:17px;left:26px;right:26px;font-size:12px;letter-spacing:.16em;color:#e3d4b5}.top #timeLabel{margin-left:auto}.top button,.bottom button,.view-controls button{background:#0e2b2c75;border:1px solid #c2c5a444;border-radius:3px;padding:9px 12px;backdrop-filter:blur(8px)}.top button:hover,.bottom button:hover,.view-controls button:hover,.hotspot:hover{background:#45645d99}.bottom{bottom:19px;left:25px;right:25px;justify-content:space-between}.primary-actions,.travel-actions{display:flex;align-items:center;gap:8px}.view-controls{bottom:76px;left:50%;transform:translateX(-50%);opacity:.65}.view-controls[hidden]{display:none}#stage{position:fixed;z-index:5;inset:0}.centerpiece{position:absolute;top:23%;left:16%;max-width:45%;pointer-events:none;text-shadow:0 4px 22px #08151c}.eyebrow{font:10px system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c5b98f}.centerpiece h1{font-size:clamp(28px,4.2vw,62px);font-weight:400;margin:12px 0}.centerpiece p{color:#c9d1c1;font:14px/1.6 system-ui,sans-serif}.hotspots{position:absolute;right:12%;top:46%;width:26%;display:grid;gap:10px}.hotspot{background:#153b3e91;border:1px solid #d1c49a66;padding:13px;text-align:left;letter-spacing:.08em;backdrop-filter:blur(6px)}.hotspot small{display:block;color:#b4c6b5;margin-top:5px;font:11px system-ui,sans-serif}.search{position:absolute;top:70%;left:50%;transform:translateX(-50%);width:min(65vw,800px);display:flex;gap:12px;align-items:center}.search input{width:100%;background:none;border:0;outline:0!important;caret-color:transparent;color:#e1c9a0;font:clamp(25px,3vw,48px) Georgia,serif;text-shadow:0 2px 10px #102328}.search[data-engine=duck] input{color:#d4b4a5}.search-dots{display:flex;flex-direction:column;gap:6px}.search-dots[hidden]{display:none}.search-dots button{font-size:10px;color:#b9b69e;background:none;border:0;padding:0}.search-dots button[aria-pressed=true]{color:#f1d9a4}.panel{position:fixed;z-index:20;inset:7% 12%;background:linear-gradient(135deg,#2a4a47f5,#10262cef);border:1px solid #c9b58a77;box-shadow:0 15px 70px #000a;display:flex;flex-direction:column;backdrop-filter:blur(18px)}.panel[hidden],#diagnostics[hidden]{display:none}.panel-head{display:flex;align-items:center;justify-content:space-between;padding:23px 30px;border-bottom:1px solid #b9b58c55}.panel h2{font-size:35px;font-weight:400;margin:8px 0 0}.panel-head button{font-size:25px;border:1px solid #b9b58c66;background:transparent;padding:3px 13px}.panel-body{padding:25px 30px;overflow:auto;flex:1;font:14px/1.6 system-ui,sans-serif}.panel-body button,.panel-body input,.panel-body textarea,.panel-body select{background:#17343b;border:1px solid #aab7a080;color:#e6dcc6;border-radius:2px;padding:9px 12px}.panel-body input,.panel-body textarea,.panel-body select{width:100%}.panel-body textarea{min-height:110px;resize:vertical}.panel-body label{display:block;margin:12px 0 5px;color:#d6d0b8}.panel-body .actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.panel-body .item{border-bottom:1px solid #b9b58c33;padding:12px 0}.panel-body .item button{margin-right:8px}.panel-body .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.panel-body .grid button{min-height:90px;text-align:left}.panel-body .muted{color:#b8c5b9}.panel-body .chip{display:inline-block;margin:3px;padding:4px 9px;border:1px solid #c4bc9a66;border-radius:20px}.panel-body .chart{width:100%;max-height:500px}.panel-body .chart text{font:11px system-ui,sans-serif;fill:#d9dfcf}.panel-body .chart .star{cursor:pointer}.panel-body .chart .star:focus{outline:2px solid #fff}#diagnostics{position:fixed;z-index:15;right:16px;top:70px;background:#0c2228ec;border:1px solid #b0b18b;padding:15px;width:min(350px,85vw);font:12px monospace;white-space:pre-wrap}#diagnostics pre{white-space:pre-wrap}.still .water{animation:none}.still *{animation-play-state:paused!important}@keyframes water{to{transform:translateY(8px) scale(1.03)}}@media(max-width:700px){.centerpiece{top:22%;left:12%;max-width:76%}.hotspots{right:10%;top:51%;width:80%;grid-template-columns:1fr 1fr}.search{top:78%;width:80vw}.panel{inset:5%}.bottom{left:8px;right:8px}.top{left:8px;right:8px}.bottom button{padding:8px}.view-controls{bottom:73px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}}
+body[data-view=left] .celestial{right:7%;top:9%;opacity:.55}body[data-view=left] .tree{left:34%;width:33%;height:64%;filter:drop-shadow(8px 10px 13px #081a1c)}body[data-view=right] .celestial{right:27%;top:17%;width:min(36vw,340px)}body[data-view=right] .tree{left:2%;opacity:.28}body[data-location=pool] .tree{left:73%;height:28%;bottom:27%}body[data-location=pool] .water{top:44%;background:repeating-radial-gradient(ellipse at 50% -20%,transparent 0 18px,#bad4bd25 21px 24px,transparent 27px 58px),linear-gradient(#4d8b82,#103c48)}body[data-location=garden] .tree{left:25%;height:78%;width:35%;opacity:.92}body[data-location=garden] .water{top:82%}body[data-location=window] .celestial{right:32%;width:min(40vw,400px)}body[data-location=helm] .celestial{right:15%;top:17%;box-shadow:0 0 90px #91b8c7aa,0 0 0 32px #b7bdb221}body[data-location=helm] .sky{background:radial-gradient(ellipse at 60% 24%,#4d627c66,transparent 45%),linear-gradient(#07101e,#203949 70%,#0e2732)}body[data-location=helm] .hotspots{top:63%}body[data-location=helm] .centerpiece{top:17%}
+
+/* WF02: replaceable view art; all navigation semantics live in data/world.json. */
+.view-artwork{position:absolute;inset:0;background-position:center;background-size:cover;opacity:.7;transition:opacity .35s;pointer-events:none}
+.world .sky{opacity:.52}.world .architecture{opacity:.78}
+.glance{position:absolute;left:16%;top:52%;max-width:37%;display:grid;gap:7px}
+.glance button{border:0;border-left:1px solid #d0b99155;background:#102a2a5c;color:#d9d1b6;padding:7px 12px;text-align:left;font:12px/1.5 system-ui,sans-serif;backdrop-filter:blur(3px);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.glance button:hover,.glance button:focus-visible{background:#345552a6}
+@media(max-width:700px){.glance{left:12%;top:42%;max-width:76%}}
+
+.helm-instruments{position:absolute;top:42%;left:15%;width:min(62vw,720px);display:grid;grid-template-columns:repeat(3,minmax(120px,1fr));gap:9px}
+.helm-instruments[hidden]{display:none}
+.helm-instruments button{min-height:60px;background:#123039aa;border:1px solid #b5a58180;color:#ded5b7;font:14px Georgia,serif;backdrop-filter:blur(8px)}
+.helm-instruments button:hover,.helm-instruments button:focus-visible{background:#355d5c}
+body[data-location=helm] .glance{top:76%;left:15%}
+body[data-location=helm] .hotspots{top:60%;right:12%;width:23%}
+@media(max-width:700px){.helm-instruments{left:8%;top:35%;width:84%;grid-template-columns:repeat(2,minmax(110px,1fr))}.helm-instruments button{min-height:45px}body[data-location=helm] .glance{top:67%;left:8%}}
+
+/* WF03: Atelier quick actions occupy the central lower arrival region. */
+body[data-location=atelier] .bottom{left:50%;right:auto;transform:translateX(-50%);bottom:24px;justify-content:center;gap:13px;max-width:calc(100vw - 24px)}
+body[data-location=atelier] .primary-actions{gap:10px;justify-content:center}
+body[data-location=atelier] .primary-actions button{min-width:49px;min-height:48px;font-size:21px;border-color:#c5ba8b77;background:#12343788;transition:background .16s,transform .16s,box-shadow .16s}
+body[data-location=atelier] .primary-actions button:hover,body[data-location=atelier] .primary-actions button:focus-visible{background:#567266c9;transform:translateY(-4px);box-shadow:0 6px 18px #0007}
+body[data-location=atelier] .travel-actions{gap:8px}
+body[data-location=atelier] #returnButton{min-width:40px;min-height:46px}
+body[data-location=atelier] .view-controls{bottom:94px}
+/* Helm is an observatory of the sky, not a second view of the Hermitage. */
+body[data-location=helm] .architecture,body[data-location=helm] .tree,body[data-location=helm] .floor,body[data-location=helm] .landscape,body[data-location=helm] .arch{display:none!important}
+body[data-location=helm] .world{background:#0b1a27}
+body[data-location=helm] .sky{background:radial-gradient(ellipse at 65% 30%,#65728a40,transparent 43%),linear-gradient(180deg,#101b34,#233e51 70%,#10252f)}
+body[data-location=helm] .celestial{right:16%;top:13%;width:min(29vw,290px);opacity:.85}
+body[data-location=helm] .centerpiece{top:15%;left:10%}
+body[data-location=helm] .helm-instruments{top:40%;left:10%;width:min(69vw,800px);grid-template-columns:repeat(3,minmax(120px,1fr))}
+.helm-heading{grid-column:1/-1;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding:12px 16px;border:1px solid #a8b9aa55;background:#0c28358c}
+.helm-heading span{font:10px system-ui,sans-serif;letter-spacing:.2em;color:#c6b58c}
+.helm-heading strong{font:32px Georgia,serif;font-weight:normal}
+.helm-heading small{font:12px system-ui,sans-serif;color:#d0d9c9}
+body[data-location=helm] .hotspots{top:79%;right:10%;width:36%;display:flex;gap:8px}
+body[data-location=helm] .hotspot{padding:8px 11px;font-size:12px}
+body[data-location=helm] .hotspot small{display:none}
+/* Both locations respond to the same actual-time phase, with different sky framing. */
+body[data-light-phase=evening] .sky{filter:hue-rotate(13deg) brightness(.75) saturate(1.2)}
+body[data-light-phase=deep] .sky{filter:sepia(.55) hue-rotate(306deg) saturate(1.65) brightness(.35)}
+body[data-light-phase=morning] .sky{filter:sepia(.15) brightness(.85)}
+@media(max-width:700px){body[data-location=atelier] .bottom{bottom:12px;gap:5px}body[data-location=atelier] .primary-actions{gap:4px}body[data-location=atelier] .primary-actions button{min-width:37px;min-height:42px;padding:6px;font-size:18px}body[data-location=atelier] #navButton span{display:none}body[data-location=atelier] .view-controls{bottom:74px}body[data-location=helm] .helm-instruments{top:39%;left:7%;width:86%;grid-template-columns:repeat(2,minmax(100px,1fr))}body[data-location=helm] .helm-heading{gap:7px}body[data-location=helm] .helm-heading strong{font-size:24px}body[data-location=helm] .hotspots{top:85%;left:7%;right:auto;width:86%}}
+
+/* WF04: the Atelier tools replace the old flavor text, not the footer. */
+body[data-location=atelier] .centerpiece{left:16%;top:29%;max-width:60%;pointer-events:auto;text-shadow:none}
+body[data-location=atelier] .centerpiece .eyebrow{opacity:.8}
+.arrival-actions{display:none;flex-wrap:wrap;align-items:center;gap:9px;margin-top:12px;max-width:min(740px,75vw)}
+body[data-location=atelier] .arrival-actions{display:flex}
+.arrival-actions button{background:#122f3294;border:1px solid #c2b58d88;color:#e5d5b5;padding:13px 16px;min-height:52px;font:14px Georgia,serif;backdrop-filter:blur(10px);transition:background .18s,transform .18s}
+.arrival-actions button span{margin-left:7px}
+.arrival-actions button:hover,.arrival-actions button:focus-visible{background:#52756acb;transform:translateY(-2px)}
+body[data-location=atelier] .bottom{left:auto;right:25px;transform:none;bottom:22px}
+body[data-location=atelier] .hotspots{top:auto;bottom:17%;right:6%;width:min(230px,21vw);gap:5px;opacity:.75}
+body[data-location=atelier] .hotspot{padding:8px 11px;font-size:12px}
+body[data-location=atelier] .hotspot small{display:none}
+body:not([data-location=atelier]) .centerpiece{display:none}
+body:not([data-location=atelier]) .glance{display:none!important}
+body[data-location=atelier] .glance{display:none!important}
+body[data-location=pool] .hotspots,body[data-location=window] .hotspots,body[data-location=garden] .hotspots{bottom:22px;top:auto;right:28px;width:auto;display:flex;gap:7px;opacity:.3;transition:opacity .2s}
+body[data-location=pool] .hotspots:hover,body[data-location=window] .hotspots:hover,body[data-location=garden] .hotspots:hover{opacity:1}
+body[data-location=pool] .hotspot,body[data-location=window] .hotspot,body[data-location=garden] .hotspot{padding:8px;font-size:12px}
+body[data-location=pool] .hotspot small,body[data-location=window] .hotspot small,body[data-location=garden] .hotspot small{display:none}
+/* Dialogs shrink to their content instead of leaving an enormous empty rectangle. */
+.panel{inset:auto;top:50%;left:50%;transform:translate(-50%,-50%);width:min(830px,calc(100vw - 44px));height:auto;max-height:min(82vh,780px);min-height:0}
+.panel-body{flex:0 1 auto;min-height:0;max-height:calc(82vh - 98px)}
+.panel[data-kind=places]{width:min(750px,calc(100vw - 44px))}
+.panel[data-kind=places] .panel-body .grid{grid-template-columns:repeat(auto-fit,minmax(135px,1fr))}
+.panel[data-kind=places] .panel-body .grid button{min-height:58px}
+.panel[data-kind=places] .panel-body{padding:19px 25px}
+.panel[data-kind=capture]{width:min(620px,calc(100vw - 44px))}
+.panel[data-kind=audio]{width:min(580px,calc(100vw - 44px))}
+.panel[data-kind=notes],.panel[data-kind=events],.panel[data-kind=today]{width:min(850px,calc(100vw - 44px))}
+.panel[data-kind=map]{width:min(1050px,calc(100vw - 44px))}
+.pool-host{position:fixed;inset:0;z-index:7;background:#0b2024}
+.pool-host[hidden]{display:none}
+.pool-host iframe{width:100%;height:100%;border:0;display:block}
+.pool-bridge{position:absolute;top:14px;left:14px;display:flex;gap:8px}
+.pool-bridge button{background:#102a2bbd;border:1px solid #bcae8d88;padding:9px 13px;color:#e7d9bd}
+body.pool-embedded #world,body.pool-embedded #stage,body.pool-embedded .top,body.pool-embedded .bottom,body.pool-embedded .view-controls{visibility:hidden}
+@media(max-width:850px){body[data-location=atelier] .centerpiece{left:8%;top:22%;max-width:84%}.arrival-actions{max-width:90vw}.arrival-actions button{padding:9px;min-height:44px;font-size:12px}.arrival-actions button span{margin-left:3px}body[data-location=atelier] .hotspots{right:8%;bottom:19%;width:190px}.panel{max-height:88vh}.panel-body{max-height:calc(88vh - 90px)}}
+
+/* WF05: keep scene-specific interfaces unobtrusive; the actual pool owns its UI. */
+body.pool-embedded #poolHost{visibility:visible}
+.pool-bridge{z-index:50;opacity:.18;transition:opacity .2s}
+.pool-bridge:hover,.pool-bridge:focus-within{opacity:1}
+body[data-location=atelier] .hotspots{opacity:.35;transition:opacity .2s}
+body[data-location=atelier] .hotspots:hover,body[data-location=atelier] .hotspots:focus-within{opacity:1}
+.panel[data-kind=places] .panel-body{max-height:270px}
+.panel[data-kind=places] .panel-body .grid{gap:8px}
+.panel[data-kind=places] .panel-body .grid button{min-height:52px}
+.panel-body input[type=checkbox]{width:auto;margin-right:6px}
+
+/* WF06: recovered Helm is a full place, not an approximation in a panel. */
+.helm-host{position:fixed;inset:0;z-index:9;background:#081822}
+.helm-host[hidden]{display:none}
+.helm-host iframe{width:100%;height:100%;border:0;display:block}
+.helm-bridge{position:absolute;z-index:2;left:14px;bottom:15px;display:flex;gap:8px;opacity:.18;transition:opacity .2s}
+.helm-bridge:hover,.helm-bridge:focus-within{opacity:1}
+.helm-bridge button{background:#102d31d9;border:1px solid #c9ba9290;color:#e6dbc3;padding:9px 14px}
+body.helm-embedded #world,body.helm-embedded #stage,body.helm-embedded .top,body.helm-embedded .bottom,body.helm-embedded .view-controls{visibility:hidden}
+/* Make direct routes easy to click and keyboard-focus on non-Atelier views. */
+body[data-location=window] .hotspots,body[data-location=garden] .hotspots{z-index:7;opacity:.65;bottom:35px;right:32px}
+body[data-location=window] .hotspots:hover,body[data-location=garden] .hotspots:hover,body[data-location=window] .hotspots:focus-within,body[data-location=garden] .hotspots:focus-within{opacity:1}
+body[data-location=window] .hotspot,body[data-location=garden] .hotspot{min-height:42px}
+/* Hover-opened panels may dismiss, but clicking inside pins them. */
+.panel[data-hover-open=true]{box-shadow:0 10px 52px #0009}

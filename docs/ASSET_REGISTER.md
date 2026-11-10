@@ -1,27 +1,23 @@
-# Asset register — Environment 05
+# Asset register
 
-All packaged images and audio are **original technical placeholders**; no earlier user-uploaded music or third-party video is included. The staging ZIP is safe to share as project source subject to the project's eventual licensing decision. Artwork is designed for individual replacement without rewriting calendar rules.
+- CSS sky, architecture, water, tree: original code-generated placeholders, no third-party image assets; intended to be replaced.
+- Synthetic ambience: original Web Audio buffer generated in browser; technical demonstration, not finished soundscape.
+- `helm-legacy/helm.js`, `helm.css`, `schedule.json`: user-provided historical Quiet Hours source; retained for design provenance. Historical schedule is optional, not silently imported into personal records.
+- No licensed commercial artwork or personal audio is bundled.
 
-| File or generated layer | Purpose | Status / provenance |
-|---|---|---|
-| `assets/ground.svg`, `assets/hills.svg` | Soil/landscape and distant three-quarter-view horizon | Original replaceable scene drawings from E03 |
-| `assets/water.svg`, `assets/rim.svg` | Clipped pond water and stone banks | Original replaceable scene drawings from E03 |
-| `assets/lilies.svg`, `assets/reeds.svg`, `assets/foreground.svg` | Water flowers, swaying plants, foreground | Original replaceable scene drawings from E03 |
-| `assets/koi-amber.svg`, `assets/koi-pearl.svg`, `assets/koi-copper.svg` | Three independent fish sprites | Original replaceable scene drawings from E03 |
-| `SkyRenderer` SVG nodes | Temporary moving sun, stars, clouds and authored sky palette; actual moon placement deferred | Generated runtime geometry, not ephemeris |
-| `CalendarMarkers` SVG nodes | Growing tree, seven-day dots, 200/400-day bars, rain and rainbow; lunar phase discs not rendered | **Retained runtime diagnostic graphics**, intentionally removable |
-| `audio/pond-water.wav` | Eight-second continuously looped environmental bed, 22,050Hz mono PCM | Original synthesized sample from E02, normalized in E04 to RMS ~0.170; browser gain 0.78 |
-| `audio/pond-motif.wav` | Eight-second independent looping music placeholder | Original synthesized sample from E02, normalized in E04 to RMS ~0.170; browser gain 0.46 |
-| `audio/splash.wav` | Short seeded/manual splash cue | Original synthesized noise transient, approximately 0.85s, peak-limited and level-adjusted in E04; browser gain 0.64 |
-| Diagnostic chime | One short single-tone audibility probe | Generated inside the existing AudioContext after explicit user click; no new file |
-| `dev/coverageScenarios.json` | 37 selected time/date and calendar visual cases | Developer-only data, not the event/date authority |
-| `calendar/source/microseasons_first_200_days.original.json` | Original 29 authored microseason names, signatures, weights | Preserved unchanged; source design data, 203-versus-200 discrepancy open |
-| `docs/living-pool-orrery-day.png`, `docs/living-pool-orrery-dusk.png` | Actual coordinator/renderer UI screenshots after tests | Offline Chromium embedded-asset render, not Firefox |
-| `docs/living-pool-browser-render-probe.png`, `docs/living-pool-night-probe.png` | Standalone renderer captures | Offline Chromium module/render test, not final art |
+## WF02 replaceable viewpoint artwork
+Seven original generated SVG technical placeholders in `assets/views/` (Atelier left/center/right; Window, Pool, Garden, Helm center). These are temporary diagrammatic compositions with no third-party art or license dependencies. Viewpoint asset paths are declared in `data/world.json`; final art may replace each independently.
 
-`tools/generate_placeholder_audio.py` retains the initial synthesis recipe but **does not reproduce the newly normalized files exactly** without applying the documented RMS/peak normalization pass. A regeneration task remains open if byte-for-byte reproducibility is required.
+## WF03
+- `assets/views/helm-center.svg`: replaces the former Helm art with sky-only celestial placeholder. No Hermitage walls, ground, garden, or pond. Original authored SVG in project; fully replaceable.
 
-**E05 asset pass:** No bundled audio or replaceable SVG source was added or removed. The independent 3D/orbital map remains an unprovided future asset/authority. The Time Laboratory now displays approximate Earth/Jade phase values as diagnostics; these are calculations, not images.
+## WF05 bundled sources
+- `integrations/living-pool/`: original Environment 06 project including source assets, audio, calendar, tests and documentation. Source: user-provided archive.
+- `recovered/quiet-hours/`: historical Quiet Hours Helm and operations planner. Source: user-provided archive. Not the current canonical data store.
 
-## Environment 06 addition
-`scenes/living-pool/assets/water-drop.wav`: original synthesized, mono PCM 24 kHz, ~0.75 s. Technical placeholder for a soft water-on-water drop; no third-party recording. Listening approval pending.
+
+## WF06 recovered Helm
+`integrations/quiet-hours-helm/` contains the original user-provided Quiet Hours Helm HTML, CSS, JS, schedule defaults, and operations editor/planner. Only local storage keys and a storage-update listener were adapted. The original visual assets are CSS-generated and local.
+
+## WF07 — Long Voyage
+`integrations/quiet-hours-helm/long-voyage/index.html`: user-supplied original single-file Observatory artwork, SVG room and canvas-generated celestial bodies; no third-party media. CSS and JS adapters are separate files. `integrations/quiet-hours-helm/` retains the recovered Quiet Hours scheduler and its visualizations.

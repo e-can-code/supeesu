@@ -1,0 +1,20 @@
+
+/* New layer: preserve The Long Voyage's architecture and distinct instrument forms. */
+#panel{z-index:30}
+.sheet{width:min(1020px,94vw);height:min(88vh,820px);max-height:88vh;display:flex;flex-direction:column;padding:22px 27px;background:linear-gradient(130deg,#24464aeF,#071923f5 74%)}
+.sheet #panelBody{min-height:0;flex:1;overflow:auto}
+.sheet:has(.schedule-instrument){width:min(1120px,96vw)}
+.schedule-instrument{width:100%;height:100%;min-height:300px;border:1px solid #91b8a76e;background:#071923}
+#helmExtra{position:absolute;right:5.5%;bottom:5%;z-index:4;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:480px}
+#helmExtra button{background:#0a2228ac;color:#d7c6a3;border:1px solid #a5b69b75;padding:8px 12px;letter-spacing:.09em;font:11px system-ui,sans-serif;clip-path:polygon(0 0,94% 0,100% 25%,100% 100%,6% 100%,0 75%);backdrop-filter:blur(6px)}
+#helmExtra button:hover,#helmExtra button:focus-visible{background:#315454dd;color:#ffe6b5;outline:1px solid #e7bc7e}
+#mapBtn:hover,#crystalBtn:hover{outline:1px solid #e7bc7e70}
+#statusPulse{position:absolute;left:50%;bottom:5%;width:7px;height:7px;border-radius:50%;background:#dfad75;box-shadow:0 0 8px #e3b87c;opacity:.65;animation:instrument-breath 7s ease-in-out infinite;pointer-events:none}
+@keyframes instrument-breath{50%{opacity:.15;box-shadow:0 0 2px #e3b87c}}
+@media(max-width:700px){#helmExtra{right:4%;bottom:4%;max-width:80%;gap:5px}#helmExtra button{font-size:10px;padding:6px 8px}.sheet{padding:13px}}
+@media(prefers-reduced-motion:reduce){#statusPulse{animation:none}}
+
+#recoverQuietHours{position:absolute;left:5.5%;bottom:4%;background:#122c34d6;border:1px solid #d7b17d77;color:#ead1a9;padding:8px 12px;font:11px system-ui,sans-serif;letter-spacing:.05em;z-index:5}
+#recoverQuietHours[hidden]{display:none}#recoverQuietHours:hover{background:#2d5155}
+#helmExtra{max-width:680px;bottom:5%}
+@media(max-width:850px){#helmExtra{max-width:66%}#recoverQuietHours{left:3%;bottom:2%}}

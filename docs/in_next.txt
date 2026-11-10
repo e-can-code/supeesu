@@ -1,9 +1,11 @@
-ENVIRONMENT 06 — NEXT ACTIONS
-1. Firefox: verify first-character capture when new tab extension opens the scene. Check IME and paste.
-2. Listen to the replacement water droplet; substitute a licensed recording if the synthesized sample is unpleasant.
-3. Verify audio persistence, ownership, and real 05:30 automatic-start behavior on the target machine.
-4. Inspect 20:30, 21:30, 22:30, 23:00, 05:29 and 05:30 lighting in the Time Laboratory.
-5. Check resource usage with several new tabs.
-6. Add material-specific animated shadows and exceptional night compositions after artistic approval.
-7. Promote the scene to the root homepage only after explicit approval.
-CALENDAR PASS: continuous 800-day chronology and all existing data retained without edits.
+WORLD FOUNDATION 08 — NEXT
+1. User-test recovered Helm schedule, star map, month view and cross-frame editing in Firefox; log results.
+2. Review imported historical routine contents, update or remove obsolete entries, and export a current JSON backup.
+3. Decide semantics of modes (activating, suppressing, duration, and relation to calendar) only after everyday usage.
+4. Validate visual/keyboard usability of Month in smaller viewports; preserve stylistic Long Voyage identity.
+5. Verify per-date exceptions in original Quiet Hours planner and combined backup import/export.
+6. Cross-iframe focus recovery and navigation return tests with actual Firefox.
+7. Preserve all Environment 06 ecological and 05:30 playback behavior. A calendar regression pass remains mandatory.
+8. Continue artistic refinement through relationship-based cohesion, not compulsory uniformity.
+
+Repair 08.1: Manually verify the nested instruments in Windows Firefox using RUN_PREVIEW.bat. Check MIME and network console; run event creation/editing, month navigation, historical import, and document empty-state behavior. Verify independent View and Garden's Edge scenes in the next artistic pass.

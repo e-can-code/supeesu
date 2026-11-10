@@ -22,6 +22,7 @@ const sceneRoot = '../scenes/living-pool/';
 const real = new RealClock();
 const world = new WorldClock(real);
 const labMode = new URLSearchParams(location.search).has('lab');
+const embeddedMode = new URLSearchParams(location.search).has('embedded');
 const savedPersistent = initialPersistentSound(localStorage, { laboratory: labMode });
 let persistentSound = savedPersistent;
 let soundscape;
@@ -194,8 +195,8 @@ async function init() {
     if (state === 'ownership-unavailable') status('Another Supeesu tab owns the audio. Stop its sound first.');
     updateButtons();
   };
-  playbackPolicy = new DailyPlaybackPolicy({ clock: real, storage: localStorage, enabled: !labMode });
-  if (!labMode) {
+  playbackPolicy = new DailyPlaybackPolicy({ clock: real, storage: localStorage, enabled: !labMode && !embeddedMode });
+  if (!labMode && !embeddedMode) {
     dailySupervisor = new DailyAudioSupervisor({
       clock: real, policy: playbackPolicy, isPlaying: () => soundscape.active && !soundscape.pausedForVisibility,
       canAttempt: () => !document.hidden || persistentSound,

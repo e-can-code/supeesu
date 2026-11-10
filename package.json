@@ -1,13 +1,11 @@
 {
-  "name": "supeesu-scene-zero-environment",
+  "name": "supeesu2-world-foundation-08",
+  "version": "0.8.1",
   "private": true,
-  "version": "0.6.0",
   "type": "module",
-  "description": "Scene Zero Environment 06: daily home, invisible search, real-time comfort lighting",
   "scripts": {
-    "test": "node --test tests/*.test.js",
-    "check": "node --check src/time/dialMath.js && node --check src/environment/skyConditions.js && node --check src/visual/skyRenderer.js && node --check src/visual/worldOrrery.js && node --check src/audio/pondWebAudio.js && node --check src/audio/persistencePreference.js && node --check src/time/worldClock.js && node --check src/time/sessionClock.js && node --check src/calendar/calendarEngine.js && node --check src/environment/environmentResolver.js && node --check src/behavior/pondBehavior.js && node --check src/visual/pondRenderer.js && node --check src/audio/soundscape.js && node --check src/audio/dailySessionPreview.js && node --check src/audio/dailyAudioSupervisor.js && node --check src/audio/dailyPlaybackPolicy.js && node --check src/app/visibilityPolicy.js && node --check scene/scene.js && node --check dev/lab.js && node --check dev/labPresentation.js && node --check dev/environmentChecks.js && node --check src/time/flowRates.js && node --check src/environment/diagnosticCycles.js && node --check src/visual/calendarMarkers.js && node --check src/app/calendarFieldGuide.js && node --check src/calendar/microseasonCatalog.js && node --check src/behavior/acceleratedEvents.js && node --check src/core/seededRandom.js && node --check src/app/invisibleSearch.js && node --check src/environment/comfortLighting.js",
-    "assets": "python3 tools/validate_scene.py",
-    "preview": "python3 -m http.server 8166"
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/app.js && node --check src/core.js && node --check src/store.js && node --check src/helm.js && node --check src/navigation.js && node --check src/hoverIntent.js && node --check src/quietHoursBridge.js && node --check integrations/quiet-hours-helm/helm.js && node --check integrations/quiet-hours-helm/operations/app.js && node --check integrations/quiet-hours-helm/operations/planner.js && node --check integrations/living-pool/scene/scene.js && node --check integrations/quiet-hours-helm/long-voyage/long-voyage.js && node --check integrations/quiet-hours-helm/long-voyage/voyage-instruments.js && node --check integrations/quiet-hours-helm/long-voyage/voyage-schedule.js && node --check integrations/quiet-hours-helm/calendarModel.mjs && node --check integrations/quiet-hours-helm/helm-runtime.js",
+    "serve": "python3 -m http.server 8178"
   }
 }

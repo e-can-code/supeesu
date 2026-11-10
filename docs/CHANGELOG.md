@@ -1,15 +1,17 @@
-# Environment 06 — Daily Home (2026-11-09)
+## 08.1 — Instrument startup repair
+- Statically activates instrument mode before runtime loading.
+- Bundles calendar helper and renderer into a classic script to avoid Windows .mjs MIME failures.
+- Prevents inner Quiet Hours room from masquerading as each requested tool.
+- Retains all schedule and planning storage keys and Long Voyage visuals.
+- Adds instrument startup regression checks.
 
-- Added Home and Laboratory presentation modes; Home is default.
-- Added invisible native-input search with Google default, DuckDuckGo upper dot, Enter and Ctrl+Enter, and IME-aware keyboard behavior.
-- Added approved real-local-time comfort lighting JSON and material-specific scene application.
-- Replaced ripple WAV binding with a softer synthesized water-drop placeholder, with 450 ms cooldown and quieter gain.
-- Added still-scene toggle, release tests and documentation.
-- Preserved ecological calendar, three clocks, existing Web Audio mixer, daily session supervisor, orrery, and prior project records.
-- Production root homepage is NOT overwritten.
+# World Foundation 08 — Daily Life Readiness
 
-## Limitations
-
-- Physical Firefox new-tab autofocus, autoplay, and sound persistence require manual acceptance.
-- The water drop is synthesized, not a licensed field recording. It needs listening approval.
-- Material translations are simple; true shadow animation and exceptional-night art remain future work.
+- Added real month view to the recovered Quiet Hours Helm, accessible through The Long Voyage instruments.
+- Added civil-date scheduling projection for recurrence, one-time exceptions and per-date planning overrides; tested leap and DST-adjacent dates.
+- Added a clearly labeled Rituals & Modes view, showing actual authored entries rather than fictional sample modes.
+- Added optional historical schedule recovery within the Helm itself, with a review screen and ID-safe additive import.
+- Preserved the Long Voyage scene, starfield, instruments, 36-hour historical chapters, and the Environment 06 Pool.
+- Exports now include Quiet Hours planning overrides when present; core imported records remain validated.
+- Extended shared event editor with semantic role: event, routine, ritual, mode.
+- No change to established audio automatic-start behavior or ecological clock ownership.

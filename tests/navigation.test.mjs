@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {NavigationSession} from '../src/navigation.js';
+const world=JSON.parse(readFileSync(new URL('../data/world.json',import.meta.url)));
+test('Atelier always remains default arrival',()=>{const n=new NavigationSession(world,{locationId:'pool',viewpointId:'center'});assert.equal(n.current.locationId,'atelier');assert.equal(n.last.locationId,'pool');});
+test('Last non-Atelier location persists through arrival',()=>{const n=new NavigationSession(world);n.travel('window');n.travel('atelier');n.arrive();assert.equal(n.last.locationId,'window');});
+test('Return restores recorded viewpoint',()=>{const n=new NavigationSession(world);n.travel('helm');n.travel('atelier');assert.equal(n.returnLast(),true);assert.deepEqual(n.current,{locationId:'helm',viewpointId:'center'});});
+test('Looking in Atelier does not overwrite history',()=>{const n=new NavigationSession(world,{locationId:'garden',viewpointId:'center'});n.look('left');assert.equal(n.last.locationId,'garden');});
+test('Invalid navigation rejected without state mutation',()=>{const n=new NavigationSession(world);assert.throws(()=>n.travel('unknown'));assert.equal(n.current.locationId,'atelier');});
+test('Every declared viewpoint has a replaceable asset',()=>{for(const l of world.locations)for(const v of l.views)assert.match(l.viewpointAssets[v].background,/^assets\/views\/.+\.svg$/);});

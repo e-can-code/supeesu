@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "arrival": {
+    "locationId": "atelier",
+    "viewpointId": "center"
+  },
+  "locations": [
+    {
+      "id": "atelier",
+      "name": "Atelier",
+      "kind": "room",
+      "description": "A place to arrive, work, and return.",
+      "views": [
+        "left",
+        "center",
+        "right"
+      ],
+      "connections": [
+        "window",
+        "pool",
+        "garden",
+        "helm"
+      ],
+      "viewpointAssets": {
+        "left": {
+          "background": "assets/views/atelier-left.svg",
+          "status": "placeholder"
+        },
+        "center": {
+          "background": "assets/views/atelier-center.svg",
+          "status": "placeholder"
+        },
+        "right": {
+          "background": "assets/views/atelier-right.svg",
+          "status": "placeholder"
+        }
+      }
+    },
+    {
+      "id": "window",
+      "name": "The View",
+      "kind": "viewpoint",
+      "description": "A threshold overlooking celestial water.",
+      "views": [
+        "center"
+      ],
+      "connections": [
+        "atelier",
+        "helm"
+      ],
+      "viewpointAssets": {
+        "center": {
+          "background": "assets/views/window-center.svg",
+          "status": "placeholder"
+        }
+      }
+    },
+    {
+      "id": "pool",
+      "name": "Living Pool",
+      "kind": "space",
+      "description": "An inhabited, contemplative waterside.",
+      "views": [
+        "center"
+      ],
+      "connections": [
+        "atelier",
+        "garden"
+      ],
+      "viewpointAssets": {
+        "center": {
+          "background": "assets/views/pool-center.svg",
+          "status": "placeholder"
+        }
+      }
+    },
+    {
+      "id": "garden",
+      "name": "Garden’s Edge",
+      "kind": "space",
+      "description": "A living threshold and place of discovery.",
+      "views": [
+        "center"
+      ],
+      "connections": [
+        "atelier",
+        "pool"
+      ],
+      "viewpointAssets": {
+        "center": {
+          "background": "assets/views/garden-center.svg",
+          "status": "placeholder"
+        }
+      }
+    },
+    {
+      "id": "helm",
+      "name": "The Helm",
+      "kind": "space",
+      "description": "Time, recurring patterns, and coordination.",
+      "views": [
+        "center"
+      ],
+      "connections": [
+        "atelier",
+        "window"
+      ],
+      "viewpointAssets": {
+        "center": {
+          "background": "assets/views/helm-center.svg",
+          "status": "placeholder"
+        }
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "gmail",
+      "label": "Gmail",
+      "url": "https://mail.google.com/"
+    },
+    {
+      "id": "drive",
+      "label": "Drive",
+      "url": "https://drive.google.com/"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "canvas",
+      "label": "Canvas",
+      "url": "https://canvas.instructure.com/"
+    }
+  ],
+  "sceneContract": {
+    "coordinateBasis": [
+      1200,
+      720
+    ],
+    "transitionStyle": "cut",
+    "authoringStatus": "provisional",
+    "interactionModel": "hotspots-and-map"
+  }
+}
